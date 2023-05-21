@@ -62,7 +62,7 @@ const easyQuestions = [
     },
 
     {
-        question: 'What is Black Panther’s suit made of?',
+        question: "What is Black Panther's suit made of?",
         answers: [
             { text: 'Titanium', correct: false },
             { text: 'Carbon Fibre', correct: false },
@@ -98,6 +98,58 @@ const easyQuestions = [
             { text: 'Steve', correct: false },
             { text: 'James', correct: false },
             { text: 'Peter', correct: false }
+        ]
+    },
+]
+
+const mediumQuestions = [
+    {
+        question: 'Which billionaire makes a cameo in Iron Man 2?',
+        answers: [
+            { text: 'Richard Branson', correct: false },
+            { text: 'Elon Musk', correct: true },
+            { text: 'Mark Zuckerberg', correct: false },
+            { text: 'Jeff Bezos', correct: false }
+        ]
+    },
+
+    {
+        question: "Who is Black Panther's little sister",
+        answers: [
+            { text: 'Shuri', correct: true },
+            { text: 'Okoye', correct: false },
+            { text: 'Nakia', correct: false },
+            { text: 'Ramonda', correct: false }
+        ]
+    },
+
+    {
+        question: 'What object does Goose swallow in Captain Marvel?',
+        answers: [
+            { text: 'A transponder', correct: false },
+            { text: "Fury's eye patch", correct: false },
+            { text: 'The tesseract', correct: true },
+            { text: 'Ship keys', correct: false }
+        ]
+    },
+
+    {
+        question: 'What were the last words said by Thanos in Avengers: Endgame?',
+        answers: [
+            { text: 'I am a survivor', correct: false },
+            { text: 'A small price to pay for salvation', correct: false },
+            { text: 'Perfectly balanced as all things should be', correct: false },
+            { text: 'I am inevitable', correct: true }
+        ]
+    },
+
+    {
+        question: "Which Avenger does Loki enslave in The Avengers?",
+        answers: [
+            { text: 'Hawkeye', correct: true },
+            { text: 'Hulk', correct: false },
+            { text: 'Iron Man', correct: false },
+            { text: 'Captain America', correct: false }
         ]
     },
 ]
