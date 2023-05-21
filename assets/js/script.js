@@ -144,12 +144,64 @@ const mediumQuestions = [
     },
 
     {
-        question: "Which Avenger does Loki enslave in The Avengers?",
+        question: 'Which Avenger does Loki enslave in The Avengers?',
         answers: [
             { text: 'Hawkeye', correct: true },
             { text: 'Hulk', correct: false },
             { text: 'Iron Man', correct: false },
             { text: 'Captain America', correct: false }
+        ]
+    },
+]
+
+const hardQuestions = [
+    {
+        question: 'What type of doctor is Dr. Strange?',
+        answers: [
+            { text: 'Neurosurgeon', correct: true },
+            { text: 'Orthopaedic surgeon', correct: false },
+            { text: 'General surgeon', correct: false },
+            { text: 'Cardiothoracic surgeon', correct: false }
+        ]
+    },
+
+    {
+        question: "What animal does Darren Cross unsuccessfully use as test subjects in Ant-Man?",
+        answers: [
+            { text: 'Rats', correct: false },
+            { text: 'Lambs', correct: true },
+            { text: 'Rabbits', correct: false },
+            { text: 'Goats', correct: false }
+        ]
+    },
+
+    {
+        question: 'Which Spongebob character does Tony call Ebony Maw in Avengers: Infinity War?',
+        answers: [
+            { text: 'Patrick', correct: false },
+            { text: "Krabs", correct: false },
+            { text: 'Plankton', correct: false },
+            { text: 'Squidward', correct: true }
+        ]
+    },
+
+    {
+        question: 'Who was the main foe in Thor: Dark World?',
+        answers: [
+            { text: 'Malekith', correct: true },
+            { text: 'Kurse', correct: false },
+            { text: 'Collector', correct: false },
+            { text: 'Volstagg', correct: false }
+        ]
+    },
+
+    {
+        question: "How many legs does Odin's horse have?",
+        answers: [
+            { text: 'Four', correct: false },
+            { text: 'Ten', correct: false },
+            { text: 'Eight', correct: true },
+            { text: 'Six', correct: false }
         ]
     },
 ]
