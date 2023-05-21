@@ -1,6 +1,10 @@
 const enterQuizBtn = document.getElementById('enter-quiz-btn');
 const quizHomeMenu = document.getElementById('quiz-home-menu');
 const difficultySelectorMenu = document.getElementById('quiz-difficulty-selection');
+const easyDifficultyBtn = document.getElementById('easy-difficulty-btn');
+const mediumDifficultyBtn = document.getElementById('medium-difficulty-btn');
+const hardDifficultyBtn = document.getElementById('hard-difficulty-btn');
+const quizReadyUpMenu = document.getElementById('quiz-readyup-menu');
 
 
 /**
@@ -12,8 +16,14 @@ enterQuizBtn.addEventListener('click', function () {
     difficultySelectorMenu.classList.remove("hidden");
 })
 
-function difficultySelector() {
+easyDifficultyBtn.addEventListener("click", difficultySelector);
+mediumDifficultyBtn.addEventListener("click", difficultySelector);
+hardDifficultyBtn.addEventListener("click", difficultySelector);
 
+
+function difficultySelector(event) {
+    difficultySelectorMenu.classList.add("hidden");
+    quizReadyUpMenu.classList.remove('hidden');
 }
 
 function runQuiz() {
