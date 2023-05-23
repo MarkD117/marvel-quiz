@@ -47,15 +47,22 @@ function difficultySelector(event) {
 }
 }
 
-function runQuiz() {
+startQuizBtn.addEventListener('click', runQuiz);
 
+function runQuiz() {
+    quizReadyUpMenu.classList.add('hidden');
+    nextQuestionBtn.classList.add('hidden');
+    quizQuestionsContainer.classList.remove('hidden');
+    
+    indexOfCurrentQuestion = 0;
+    displayQuestions(randomQuestions[indexOfCurrentQuestion]);
 }
 
 function nextQuestion() {
 
 }
 
-function displayQuestions() {
+function displayQuestions(question) {
 
 }
 
