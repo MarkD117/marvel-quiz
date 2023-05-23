@@ -63,7 +63,16 @@ function nextQuestion() {
 }
 
 function displayQuestions(question) {
+    currentQuestion.innerText = question.question
+    answerButton1.innerText = question.answers[0].text;
+    answerButton2.innerText = question.answers[1].text;
+    answerButton3.innerText = question.answers[2].text;
+    answerButton4.innerText = question.answers[3].text;
 
+    answerButton1.onclick = checkAnswer;
+    answerButton2.onclick = checkAnswer;
+    answerButton3.onclick = checkAnswer;
+    answerButton4.onclick = checkAnswer;
 }
 
 function incrementScore() {
