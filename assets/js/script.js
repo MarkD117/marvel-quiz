@@ -64,10 +64,10 @@ function nextQuestion() {
 
 function displayQuestions(question) {
     currentQuestion.innerText = question.question
-    answerButton1.innerText = question.answers[0].text;
-    answerButton2.innerText = question.answers[1].text;
-    answerButton3.innerText = question.answers[2].text;
-    answerButton4.innerText = question.answers[3].text;
+    answerButton1.innerText = question.options[0].text;
+    answerButton2.innerText = question.options[1].text;
+    answerButton3.innerText = question.options[2].text;
+    answerButton4.innerText = question.options[3].text;
 
     answerButton1.onclick = checkAnswer;
     answerButton2.onclick = checkAnswer;
@@ -79,7 +79,7 @@ function incrementScore() {
 
 }
 
-function checkAnswer() {
+function checkAnswer(event) {
 
 }
 
@@ -90,155 +90,185 @@ function displayResults() {
 const easyQuestions = [
     {
         question: 'What was the first Marvel movie ever made?',
-        answers: [
-            { text: 'Iron Man', correct: true },
-            { text: 'Thor', correct: false },
-            { text: 'Captain America', correct: false },
-            { text: 'The Incredible Hulk', correct: false }
-        ]
+        options: [
+            { text: 'Iron Man',},
+            { text: 'Thor',},
+            { text: 'Captain America',},
+            { text: 'The Incredible Hulk',}
+        ],
+
+        answer: 'Iron Man'
     },
 
     {
         question: "What is Black Panther's suit made of?",
-        answers: [
-            { text: 'Titanium', correct: false },
-            { text: 'Carbon Fibre', correct: false },
-            { text: 'Vibranium', correct: true },
-            { text: 'Kevlar', correct: false }
-        ]
+        options: [
+            { text: 'Titanium'},
+            { text: 'Carbon Fibre'},
+            { text: 'Vibranium'},
+            { text: 'Kevlar'}
+        ],
+
+        answer: 'Vibranium'
     },
 
     {
         question: 'Which actor voices the character of Groot?',
-        answers: [
-            { text: 'Bradley Cooper', correct: false },
-            { text: 'Vin Diesel', correct: true },
-            { text: 'Jeremy Renner', correct: false },
-            { text: 'Mark Ruffalo', correct: false }
-        ]
+        options: [
+            { text: 'Bradley Cooper'},
+            { text: 'Vin Diesel'},
+            { text: 'Jeremy Renner'},
+            { text: 'Mark Ruffalo'}
+        ],
+
+        answer: 'Vin Diesel'
     },
 
     {
         question: 'What is Korg made of?',
-        answers: [
-            { text: 'Iron', correct: false },
-            { text: 'Scissors', correct: false },
-            { text: 'Paper', correct: false },
-            { text: 'Rock', correct: true }
-        ]
+        options: [
+            { text: 'Iron'},
+            { text: 'Scissors'},
+            { text: 'Paper'},
+            { text: 'Rock'}
+        ],
+
+        answer: 'Rock'
     },
 
     {
         question: "What is Tony Stark's father's name?",
-        answers: [
-            { text: 'Howard', correct: true },
-            { text: 'Steve', correct: false },
-            { text: 'James', correct: false },
-            { text: 'Peter', correct: false }
-        ]
+        options: [
+            { text: 'Howard'},
+            { text: 'Steve'},
+            { text: 'James'},
+            { text: 'Peter'}
+        ],
+
+        answer: 'Howard'
     },
 ]
 
 const mediumQuestions = [
     {
         question: 'Which billionaire makes a cameo in Iron Man 2?',
-        answers: [
-            { text: 'Richard Branson', correct: false },
-            { text: 'Elon Musk', correct: true },
-            { text: 'Mark Zuckerberg', correct: false },
-            { text: 'Jeff Bezos', correct: false }
-        ]
+        options: [
+            { text: 'Richard Branson'},
+            { text: 'Elon Musk'},
+            { text: 'Mark Zuckerberg'},
+            { text: 'Jeff Bezos'}
+        ],
+
+        answer: 'Elon Musk'
     },
 
     {
         question: "Who is Black Panther's little sister",
-        answers: [
-            { text: 'Shuri', correct: true },
-            { text: 'Okoye', correct: false },
-            { text: 'Nakia', correct: false },
-            { text: 'Ramonda', correct: false }
-        ]
+        options: [
+            { text: 'Shuri'},
+            { text: 'Okoye'},
+            { text: 'Nakia'},
+            { text: 'Ramonda'}
+        ],
+
+        answer: 'Shuri'
     },
 
     {
         question: 'What object does Goose swallow in Captain Marvel?',
-        answers: [
-            { text: 'A transponder', correct: false },
-            { text: "Fury's eye patch", correct: false },
-            { text: 'The tesseract', correct: true },
-            { text: 'Ship keys', correct: false }
-        ]
+        options: [
+            { text: 'A transponder'},
+            { text: "Fury's eye patch"},
+            { text: 'The Tesseract'},
+            { text: 'Ship keys'}
+        ],
+
+        answer: 'The Tesseract'
     },
 
     {
         question: 'What were the last words said by Thanos in Avengers: Endgame?',
-        answers: [
-            { text: 'I am a survivor', correct: false },
-            { text: 'A small price to pay for salvation', correct: false },
-            { text: 'Perfectly balanced as all things should be', correct: false },
-            { text: 'I am inevitable', correct: true }
-        ]
+        options: [
+            { text: 'I am a survivor'},
+            { text: 'A small price to pay for salvation'},
+            { text: 'Perfectly balanced as all things should be'},
+            { text: 'I am inevitable'}
+        ],
+
+        answer: 'I am inevitable'
     },
 
     {
         question: 'Which Avenger does Loki enslave in The Avengers?',
-        answers: [
-            { text: 'Hawkeye', correct: true },
-            { text: 'Hulk', correct: false },
-            { text: 'Iron Man', correct: false },
-            { text: 'Captain America', correct: false }
-        ]
+        options: [
+            { text: 'Hawkeye'},
+            { text: 'Hulk'},
+            { text: 'Iron Man'},
+            { text: 'Captain America'}
+        ],
+
+        answer: 'Hawkeye'
     },
 ]
 
 const hardQuestions = [
     {
         question: 'What type of doctor is Dr. Strange?',
-        answers: [
-            { text: 'Neurosurgeon', correct: true },
-            { text: 'Orthopaedic surgeon', correct: false },
-            { text: 'General surgeon', correct: false },
-            { text: 'Cardiothoracic surgeon', correct: false }
-        ]
+        options: [
+            { text: 'Neurosurgeon'},
+            { text: 'Orthopaedic surgeon'},
+            { text: 'General surgeon'},
+            { text: 'Cardiothoracic surgeon'}
+        ],
+
+        answer: 'Neurosurgeon'
     },
 
     {
         question: "What animal does Darren Cross unsuccessfully use as test subjects in Ant-Man?",
-        answers: [
-            { text: 'Rats', correct: false },
-            { text: 'Lambs', correct: true },
-            { text: 'Rabbits', correct: false },
-            { text: 'Goats', correct: false }
-        ]
+        options: [
+            { text: 'Rats'},
+            { text: 'Lambs'},
+            { text: 'Rabbits'},
+            { text: 'Goats'}
+        ],
+
+        answer: 'Lambs'
     },
 
     {
         question: 'Which Spongebob character does Tony call Ebony Maw in Avengers: Infinity War?',
-        answers: [
-            { text: 'Patrick', correct: false },
-            { text: "Krabs", correct: false },
-            { text: 'Plankton', correct: false },
-            { text: 'Squidward', correct: true }
-        ]
+        options: [
+            { text: 'Patrick'},
+            { text: "Krabs"},
+            { text: 'Plankton'},
+            { text: 'Squidward'}
+        ],
+
+        answer: 'Patrick'
     },
 
     {
         question: 'Who was the main foe in Thor: Dark World?',
-        answers: [
-            { text: 'Malekith', correct: true },
-            { text: 'Kurse', correct: false },
-            { text: 'Collector', correct: false },
-            { text: 'Volstagg', correct: false }
-        ]
+        options: [
+            { text: 'Malekith'},
+            { text: 'Kurse'},
+            { text: 'Collector' },
+            { text: 'Volstagg'}
+        ],
+
+        answer: 'Malekith'
     },
 
     {
         question: "How many legs does Odin's horse have?",
-        answers: [
-            { text: 'Four', correct: false },
-            { text: 'Ten', correct: false },
-            { text: 'Eight', correct: true },
-            { text: 'Six', correct: false }
-        ]
+        options: [
+            { text: 'Four'},
+            { text: 'Ten'},
+            { text: 'Eight'},
+            { text: 'Six'}
+        ],
+
+        answer: 'Eight'
     },
 ]
