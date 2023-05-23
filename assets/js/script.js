@@ -5,6 +5,14 @@ const easyDifficultyBtn = document.getElementById('easy-difficulty-btn');
 const mediumDifficultyBtn = document.getElementById('medium-difficulty-btn');
 const hardDifficultyBtn = document.getElementById('hard-difficulty-btn');
 const quizReadyUpMenu = document.getElementById('quiz-readyup-menu');
+const startQuizBtn = document.getElementById('start-quiz-btn');
+const quizQuestionsContainer = document.getElementById('quiz-questions-container');
+const currentQuestion = document.getElementById('question');
+const answerButton1 = document.getElementById('answer-btn-1');
+const answerButton2 = document.getElementById('answer-btn-2');
+const answerButton3 = document.getElementById('answer-btn-3');
+const answerButton4 = document.getElementById('answer-btn-4');
+const nextQuestionBtn = document.getElementById('next-btn');
 
 let randomQuestions, indexOfCurrentQuestion
 
