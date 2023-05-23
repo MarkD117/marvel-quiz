@@ -6,6 +6,7 @@ const mediumDifficultyBtn = document.getElementById('medium-difficulty-btn');
 const hardDifficultyBtn = document.getElementById('hard-difficulty-btn');
 const quizReadyUpMenu = document.getElementById('quiz-readyup-menu');
 
+let randomQuestions, indexOfCurrentQuestion
 
 /**
  * Event listener added to the quiz button on the quiz home screen
@@ -24,13 +25,25 @@ hardDifficultyBtn.addEventListener("click", difficultySelector);
 function difficultySelector(event) {
     difficultySelectorMenu.classList.add("hidden");
     quizReadyUpMenu.classList.remove('hidden');
+
+    switch (event.target.id) {
+        case 'easy-difficulty-btn':
+            randomQuestions = easyQuestions.sort(() => Math.random() - 0.5);
+            break;
+        case 'medium-difficulty-btn':
+            randomQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
+            break;
+        case 'hard-difficulty-btn':
+            randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
+            break;
+}
 }
 
 function runQuiz() {
 
 }
 
-function nextQuestionBtn() {
+function nextQuestion() {
 
 }
 
@@ -84,10 +97,10 @@ const easyQuestions = [
     {
         question: 'What is Korg made of?',
         answers: [
-            { text: 'Iron', correct: true },
+            { text: 'Iron', correct: false },
             { text: 'Scissors', correct: false },
             { text: 'Paper', correct: false },
-            { text: 'Rock', correct: false }
+            { text: 'Rock', correct: true }
         ]
     },
 
