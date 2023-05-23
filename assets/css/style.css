@@ -16,3 +16,21 @@ body {
 .hidden {
     display: none;
 }
+
+.correct {
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+
+  .wrong {
+    border: 1px solid black;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }

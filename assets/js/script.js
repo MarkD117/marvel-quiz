@@ -80,7 +80,15 @@ function incrementScore() {
 }
 
 function checkAnswer(event) {
+    let selectedAnswer = event.target.innerText;
+    let correctAnswer = randomQuestions[indexOfCurrentQuestion].answer;
+    nextQuestionBtn.classList.remove('hidden');
 
+    if (selectedAnswer === correctAnswer) {
+        event.target.classList.add('correct');
+    } else {
+        event.target.classList.add('wrong')
+    }
 }
 
 function displayResults() {
