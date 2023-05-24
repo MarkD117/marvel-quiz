@@ -56,7 +56,13 @@ function runQuiz() {
     quizQuestionsContainer.classList.remove('hidden');
     
     indexOfCurrentQuestion = 0;
-    displayQuestions(randomQuestions[indexOfCurrentQuestion]); 
+    displayQuestions(randomQuestions[indexOfCurrentQuestion]);
+
+    nextQuestionBtn.addEventListener('click', function(){
+        displayQuestions(randomQuestions[indexOfCurrentQuestion]);
+        resetState()
+    })
+    
 }
 
 function displayQuestions(question) {
