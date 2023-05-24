@@ -14,6 +14,7 @@ const answerButton3 = document.getElementById('answer-btn-3');
 const answerButton4 = document.getElementById('answer-btn-4');
 const nextQuestionBtn = document.getElementById('next-btn');
 
+let answerButtons = document.getElementsByClassName('answer-btn');
 let randomQuestions, indexOfCurrentQuestion
 
 /**
@@ -55,11 +56,7 @@ function runQuiz() {
     quizQuestionsContainer.classList.remove('hidden');
     
     indexOfCurrentQuestion = 0;
-    displayQuestions(randomQuestions[indexOfCurrentQuestion]);
-}
-
-function nextQuestion() {
-
+    displayQuestions(randomQuestions[indexOfCurrentQuestion]); 
 }
 
 function displayQuestions(question) {
@@ -91,6 +88,25 @@ function checkAnswer(event) {
     } else {
         chosenAnswer.classList.add('incorrect');
         indexOfCurrentQuestion++;
+    }
+
+    for (let i of answerButtons) {
+        i.setAttribute("disabled", "disabled");
+    }
+}
+
+
+
+function nextQuestion() {
+    
+}
+
+function resetState() {
+    
+    for (let i of answerButtons) {
+        i.classList.remove('correct');
+        i.classList.remove('incorrect');
+        i.removeAttribute("disabled", "disabled");
     }
 }
 
