@@ -87,8 +87,10 @@ function checkAnswer(event) {
 
     if (selectedAnswer === correctAnswer) {
         chosenAnswer.classList.add('correct');
+        indexOfCurrentQuestion++;
     } else {
-        chosenAnswer.classList.add('wrong')
+        chosenAnswer.classList.add('incorrect');
+        indexOfCurrentQuestion++;
     }
 }
 
