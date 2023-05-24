@@ -278,7 +278,7 @@ const hardQuestions = [
             { text: 'Squidward'}
         ],
 
-        answer: 'Patrick'
+        answer: 'Squidward'
     },
 
     {
