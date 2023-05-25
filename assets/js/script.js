@@ -87,17 +87,22 @@ function displayQuestions(question) {
 }
 
 function checkAnswer(event) {
-    let chosenAnswer = event.target;
-    let selectedAnswer = chosenAnswer.innerText;
+    let selectedBtn = event.target;
+    let selectedAnswer = selectedBtn.innerText;
     let correctAnswer = randomQuestions[indexOfCurrentQuestion].answer;
     nextQuestionBtn.classList.remove('hidden');
 
     if (selectedAnswer === correctAnswer) {
-        chosenAnswer.classList.add('correct');
+        selectedBtn.classList.add('correct');
         indexOfCurrentQuestion++;
         playerScore++;
     } else {
-        chosenAnswer.classList.add('incorrect');
+        selectedBtn.classList.add('incorrect');
+        for (let i of answerButtons) {
+            if (i.innerText === correctAnswer) {
+                i.classList.add('correct')
+            }
+        }
         indexOfCurrentQuestion++;
     }
 
