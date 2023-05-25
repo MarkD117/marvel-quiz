@@ -14,9 +14,12 @@ const answerButton3 = document.getElementById('answer-btn-3');
 const answerButton4 = document.getElementById('answer-btn-4');
 const nextQuestionBtn = document.getElementById('next-btn');
 const quizResultsScreen = document.getElementById('quiz-results-screen');
+const quizResultsText = document.getElementById('quiz-results-text');
 
 let answerButtons = document.getElementsByClassName('answer-btn');
-let randomQuestions, indexOfCurrentQuestion
+let randomQuestions;
+let indexOfCurrentQuestion;
+let playerScore = 0;
 
 /**
  * Event listener added to the quiz button on the quiz home screen
@@ -62,8 +65,7 @@ function runQuiz() {
     let quizLength = 4;
     nextQuestionBtn.addEventListener('click', function(){
         if (indexOfCurrentQuestion > quizLength ) {
-            quizQuestionsContainer.classList.add('hidden');
-            quizResultsScreen.classList.remove('hidden');
+            displayResults()
         } else {
             displayQuestions(randomQuestions[indexOfCurrentQuestion]);
             resetState();
@@ -85,10 +87,6 @@ function displayQuestions(question) {
     answerButton4.onclick = checkAnswer;
 }
 
-function incrementScore() {
-
-}
-
 function checkAnswer(event) {
     let chosenAnswer = event.target;
     let selectedAnswer = chosenAnswer.innerText;
@@ -98,6 +96,7 @@ function checkAnswer(event) {
     if (selectedAnswer === correctAnswer) {
         chosenAnswer.classList.add('correct');
         indexOfCurrentQuestion++;
+        playerScore++;
     } else {
         chosenAnswer.classList.add('incorrect');
         indexOfCurrentQuestion++;
@@ -124,7 +123,9 @@ function resetState() {
 }
 
 function displayResults() {
-
+    quizQuestionsContainer.classList.add('hidden');
+    quizResultsScreen.classList.remove('hidden');
+    quizResultsText.innerHTML = `You got ${playerScore}/5!`;
 }
 
 const easyQuestions = [
