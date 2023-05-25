@@ -81,10 +81,9 @@ function displayQuestions(question) {
     answerButton3.innerText = question.options[2].text;
     answerButton4.innerText = question.options[3].text;
 
-    answerButton1.onclick = checkAnswer;
-    answerButton2.onclick = checkAnswer;
-    answerButton3.onclick = checkAnswer;
-    answerButton4.onclick = checkAnswer;
+    for (let i of answerButtons) {
+        i.onclick = checkAnswer;
+    }
 }
 
 function checkAnswer(event) {
