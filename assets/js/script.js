@@ -13,6 +13,7 @@ const answerButton2 = document.getElementById('answer-btn-2');
 const answerButton3 = document.getElementById('answer-btn-3');
 const answerButton4 = document.getElementById('answer-btn-4');
 const nextQuestionBtn = document.getElementById('next-btn');
+const quizResultsScreen = document.getElementById('quiz-results-screen');
 
 let answerButtons = document.getElementsByClassName('answer-btn');
 let randomQuestions, indexOfCurrentQuestion
@@ -58,9 +59,15 @@ function runQuiz() {
     indexOfCurrentQuestion = 0;
     displayQuestions(randomQuestions[indexOfCurrentQuestion]);
 
+    let quizLength = 4;
     nextQuestionBtn.addEventListener('click', function(){
-        displayQuestions(randomQuestions[indexOfCurrentQuestion]);
-        resetState()
+        if (indexOfCurrentQuestion > quizLength ) {
+            quizQuestionsContainer.classList.add('hidden');
+            quizResultsScreen.classList.remove('hidden');
+        } else {
+            displayQuestions(randomQuestions[indexOfCurrentQuestion]);
+            resetState();
+        }
     })
     
 }
