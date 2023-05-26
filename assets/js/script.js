@@ -15,6 +15,7 @@ const answerButton4 = document.getElementById('answer-btn-4');
 const nextQuestionBtn = document.getElementById('next-btn');
 const quizResultsScreen = document.getElementById('quiz-results-screen');
 const quizResultsText = document.getElementById('quiz-results-text');
+const quizHomeBtn = document.getElementById('home-btn');
 
 let answerButtons = document.getElementsByClassName('answer-btn');
 let randomQuestions;
@@ -64,7 +65,7 @@ function runQuiz() {
 
     
     nextQuestionBtn.onclick = nextQuestion;
-    
+    quizHomeBtn.onclick = homeBtn;
 }
 
 function displayQuestions(question) {
@@ -131,6 +132,15 @@ function displayResults() {
     quizQuestionsContainer.classList.add('hidden');
     quizResultsScreen.classList.remove('hidden');
     quizResultsText.innerHTML = `You got ${playerScore}/5!`;
+}
+
+function homeBtn() {
+    quizHomeBtn.addEventListener('click', function () {
+        quizResultsScreen.classList.add('hidden');
+        quizHomeMenu.classList.remove('hidden');
+        playerScore = 0;
+        resetState();
+    })
 }
 
 const easyQuestions = [
