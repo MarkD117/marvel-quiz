@@ -62,15 +62,8 @@ function runQuiz() {
     indexOfCurrentQuestion = 0;
     displayQuestions(randomQuestions[indexOfCurrentQuestion]);
 
-    let quizLength = 4;
-    nextQuestionBtn.addEventListener('click', function(){
-        if (indexOfCurrentQuestion > quizLength ) {
-            displayResults()
-        } else {
-            displayQuestions(randomQuestions[indexOfCurrentQuestion]);
-            resetState();
-        }
-    })
+    
+    nextQuestionBtn.onclick = nextQuestion;
     
 }
 
@@ -114,7 +107,15 @@ function checkAnswer(event) {
 
 
 function nextQuestion() {
-    
+    let quizLength = 4;
+    nextQuestionBtn.addEventListener('click', function(){
+        if (indexOfCurrentQuestion > quizLength ) {
+            displayResults()
+        } else {
+            displayQuestions(randomQuestions[indexOfCurrentQuestion]);
+            resetState();
+        }
+    })
 }
 
 function resetState() {
