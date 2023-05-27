@@ -5,6 +5,8 @@
 }
 
 body {
+    background: url("../images/main-quiz-background-img.jpg") no-repeat center center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,3 +36,4 @@ body {
     color: white;
     outline: none;
   }
+
