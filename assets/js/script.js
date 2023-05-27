@@ -31,11 +31,17 @@ enterQuizBtn.addEventListener('click', function () {
     difficultySelectorMenu.classList.remove("hidden");
 })
 
+//Difficulty buttons have event listeners that when clicked, will run the difficulty seletor function
 easyDifficultyBtn.addEventListener("click", difficultySelector);
 mediumDifficultyBtn.addEventListener("click", difficultySelector);
 hardDifficultyBtn.addEventListener("click", difficultySelector);
 
-
+/**
+ * This function will remove the difficulty selector once the user has chosen a difficulty.
+ * Depending on the difficulty selected by the user, the function will randomly assign 
+ * questions from the array of the chosen difficulty to a variable called randomQuestions.
+ * @param {Difficulty button selected by user} event 
+ */
 function difficultySelector(event) {
     difficultySelectorMenu.classList.add("hidden");
     quizReadyUpMenu.classList.remove('hidden');
@@ -53,8 +59,15 @@ function difficultySelector(event) {
 }
 }
 
+// Event listener added to start button that will run the runQuiz function
 startQuizBtn.addEventListener('click', runQuiz);
 
+/**
+ * This is the main function that runs the quiz game. It starts by hiding the ready up menu
+ * and displaying the quiz questions. It sets the index of the of the current question to 0
+ * and runs the displayQuestions function. When clicking the next question button, the 
+ * nextQuestion function is run. When clicking the home button, the HomeBtn function is run.
+ */
 function runQuiz() {
     quizReadyUpMenu.classList.add('hidden');
     nextQuestionBtn.classList.add('hidden');
@@ -68,6 +81,12 @@ function runQuiz() {
     quizHomeBtn.onclick = homeBtn;
 }
 
+/**
+ * This function will set the inner text of the question element to the text of the selected question in the array/object.
+ * It will also set the text of the buttons to the options text in the same selected question array/object.
+ * A for of loop is used to set the onclick event attribute to run the checkAnswer function for each button.
+ * @param {Current object in the selected question array} question 
+ */
 function displayQuestions(question) {
     currentQuestion.innerText = question.question
     answerButton1.innerText = question.options[0].text;
@@ -80,6 +99,19 @@ function displayQuestions(question) {
     }
 }
 
+/**
+ * This function assigns the user selected answer and the correct answer to variables.
+ * 
+ * If the user's selected answer is equal to the correct answer - the selected button will have the
+ * correct style applied and the playerScore/indexOfCurrentQuestion variables will be incremented.
+ * 
+ * If the answers do not match - the selected button will have the incorrect style applied and a for
+ * of loop runs checking the innerText of the other answeButtons. When the loops finds a match with 
+ * the correct answer, the correct style will be applied. The question index is then incremented.
+ * 
+ * Once the user selects an answer, all buttons attributes are set to disabled
+ * @param {Button clicked by the user} event 
+ */
 function checkAnswer(event) {
     let selectedBtn = event.target;
     let selectedAnswer = selectedBtn.innerText;
@@ -106,7 +138,11 @@ function checkAnswer(event) {
 }
 
 
-
+/**
+ * This funtion sets the quiz length to 4. If the index of the current question is greater
+ * than the quizLength variable, the displayResults function is called. Otherwise,
+ * the displayQuestions & resetState functions are called
+ */
 function nextQuestion() {
     let quizLength = 4;
     nextQuestionBtn.addEventListener('click', function(){
@@ -119,6 +155,10 @@ function nextQuestion() {
     })
 }
 
+/**
+ * This function utilises a for loop that removes correct/incorrect styles from the answer buttons.
+ * It also removes the disabled attribute from the buttons allowing the user to select a new answer.
+ */
 function resetState() {
     
     for (let i of answerButtons) {
@@ -128,12 +168,21 @@ function resetState() {
     }
 }
 
+/**
+ * This function will hide the quiz questions and display the quiz results screen.
+ * It tracks the player score and displays it to the user.
+ */
 function displayResults() {
     quizQuestionsContainer.classList.add('hidden');
     quizResultsScreen.classList.remove('hidden');
     quizResultsText.innerHTML = `You got ${playerScore}/5!`;
 }
 
+/**
+ * This function has an event listener on the home button that when clicked
+ * will bring the user back to the home screen, set the playerScore back to 0
+ * and calls the resetState function
+ */
 function homeBtn() {
     quizHomeBtn.addEventListener('click', function () {
         quizResultsScreen.classList.add('hidden');
@@ -143,6 +192,7 @@ function homeBtn() {
     })
 }
 
+// Easy Questions nested data structure
 const easyQuestions = [
     {
         question: 'What was the first Marvel movie ever made?',
@@ -205,6 +255,7 @@ const easyQuestions = [
     },
 ]
 
+// Medium Questions nested data structure
 const mediumQuestions = [
     {
         question: 'Which billionaire makes a cameo in Iron Man 2?',
@@ -267,6 +318,7 @@ const mediumQuestions = [
     },
 ]
 
+// Hard Questions nested data structure
 const hardQuestions = [
     {
         question: 'What type of doctor is Dr. Strange?',
