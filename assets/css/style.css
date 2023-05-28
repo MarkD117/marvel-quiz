@@ -53,8 +53,9 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     width: 90%;
     height: 200px;
+    margin: 10px;
     background: url("../images/quiz-background-image-2.jpg") no-repeat center center;
-    border: 2px solid white;
+    border: 2px solid #fafafa;
     border-radius: 5px;
   }
 
@@ -70,7 +71,7 @@ body {
     background-color: #FF0013;
     color: #fafafa;
     padding: 0 10px;
-    border: 2px solid white;
+    border: 2px solid #fafafa;
   }
 
   #quiz-home-menu h2 {
