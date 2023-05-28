@@ -49,8 +49,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8),
-                0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    width: 90%;
+    height: 200px;
+    background: url("../images/quiz-background-image-2.jpg") no-repeat center center;
+    border: 2px solid white;
+    border-radius: 5px;
   }
 
   h1 {
@@ -60,10 +64,10 @@ body {
   }
 
   #quiz-home-menu {
-    width: 90%;
+    /* width: 90%;
     height: 200px;
     background: url("../images/quiz-background-image-2.jpg") no-repeat center center;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 5px; */
     
   }
