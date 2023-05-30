@@ -101,11 +101,12 @@ main {
     color: #FF0013;
   }
 
-  #difficulty-button-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  #home-menu-button-container, 
+  #difficulty-button-container,
+   #start-quiz-button-container,
+   #answer-btn-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
   }
