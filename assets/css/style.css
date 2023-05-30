@@ -62,18 +62,19 @@ main {
 
   h1 {
     position: absolute;
-    top: 33%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     clear: both;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    transform: translate(-50%, -50%);
     font-size: 40px;
     background-color: #FF0013;
     color: #fafafa;
     padding: 0 10px;
     border: 2px solid #fafafa;
-  }
+}
 
   h2 {
    font-size: 20px;
@@ -83,10 +84,6 @@ main {
   }
 
   .btn {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin: 0 auto;
     height: 40px;
     width: 150px;
