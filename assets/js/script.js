@@ -112,6 +112,11 @@ function displayQuestions(question) {
  * Once the user selects an answer, all buttons attributes are set to disabled
  * @param {Button clicked by the user} event 
  */
+
+// creating the new div tags which for icons
+let tickIconTag = '<div class="icon tick"><i class="fa-regular fa-circle-check"></i></div>';
+let crossIconTag = '<div class="icon cross"><i class="fa-regular fa-circle-xmark"></i></i></div>';
+
 function checkAnswer(event) {
     let selectedBtn = event.target;
     let selectedAnswer = selectedBtn.innerText;
@@ -120,6 +125,7 @@ function checkAnswer(event) {
 
     if (selectedAnswer === correctAnswer) {
         selectedBtn.classList.add('correct');
+        selectedBtn.insertAdjacentHTML("beforeend", tickIconTag);
         indexOfCurrentQuestion++;
         playerScore++;
     } else {
@@ -127,8 +133,10 @@ function checkAnswer(event) {
         for (let i of answerButtons) {
             if (i.innerText === correctAnswer) {
                 i.classList.add('correct')
+                i.insertAdjacentHTML("beforeend", tickIconTag);
             }
         }
+        selectedBtn.insertAdjacentHTML("beforeend", crossIconTag);
         indexOfCurrentQuestion++;
     }
 
