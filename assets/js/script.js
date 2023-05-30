@@ -142,6 +142,7 @@ function checkAnswer(event) {
 
     for (let i of answerButtons) {
         i.setAttribute("disabled", "disabled");
+        i.classList.remove('answer-btn-hover');
     }
 }
 
@@ -173,6 +174,7 @@ function resetState() {
     for (let i of answerButtons) {
         i.classList.remove('correct');
         i.classList.remove('incorrect');
+        i.classList.add('answer-btn-hover');
         i.removeAttribute("disabled", "disabled");
     }
 }
