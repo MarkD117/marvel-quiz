@@ -157,6 +157,7 @@ function nextQuestion() {
         if (indexOfCurrentQuestion > quizLength ) {
             displayResults()
         } else {
+            nextQuestionBtn.classList.add('hidden');
             displayQuestions(randomQuestions[indexOfCurrentQuestion]);
             resetState();
         }
