@@ -106,12 +106,16 @@ h2 {
   align-items: center;
 }
 
-#question {
+#question, #quiz-results-text  {
   font-size: 17px;
   color: #fafafa;
   text-align: center;
   font-weight: 700;
   margin: 0 10px;
+}
+
+#quiz-results-text {
+  font-size: 25px;
 }
 
 .answer-btn {
