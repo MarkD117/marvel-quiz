@@ -48,22 +48,16 @@ main {
     outline: none;
   }
 
-  #quiz-home-menu,
-  #quiz-difficulty-selection,
-  #quiz-readyup-menu,
-  #quiz-questions-container,
-  #quiz-results-screen {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-    width: 90%;
-    height: 200px;
-    margin: 10px;
+  #quiz-container {
     background: url("../images/quiz-background-image-2.jpg") no-repeat center center;
+    max-width: 80%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
     border: 2px solid #fafafa;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   }
 
   h1 {
