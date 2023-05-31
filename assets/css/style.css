@@ -56,7 +56,6 @@ main {
 header {
   display: grid;
   align-items: center;
-  padding: 0 50px;
 }
 
 #quiz-heading-container {
