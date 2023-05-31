@@ -1,5 +1,6 @@
 const enterQuizBtn = document.getElementById('enter-quiz-btn');
 const quizHomeMenu = document.getElementById('quiz-home-menu');
+const mainQuizHomeBtn = document.getElementById('main-home-btn');
 const difficultySelectorMenu = document.getElementById('quiz-difficulty-selection');
 const easyDifficultyBtn = document.getElementById('easy-difficulty-btn');
 const mediumDifficultyBtn = document.getElementById('medium-difficulty-btn');
@@ -30,6 +31,11 @@ enterQuizBtn.addEventListener('click', function () {
     quizHomeMenu.classList.add("hidden");
     difficultySelectorMenu.classList.remove("hidden");
 })
+
+// Reloads the window taking the user back to the home screen
+mainQuizHomeBtn.onclick = ()=>{
+    window.location.reload(); 
+}
 
 //Difficulty buttons have event listeners that when clicked, will run the difficulty seletor function
 easyDifficultyBtn.addEventListener("click", difficultySelector);
@@ -113,9 +119,9 @@ function displayQuestions(question) {
  * @param {Button clicked by the user} event 
  */
 
-// creating the new div tags which for icons
+// creating the new div tags the correct and incorrect icons
 let tickIconTag = '<div class="icon tick"><i class="fa-regular fa-circle-check"></i></div>';
-let crossIconTag = '<div class="icon cross"><i class="fa-regular fa-circle-xmark"></i></i></div>';
+let crossIconTag = '<div class="icon cross"><i class="fa-regular fa-circle-xmark"></i></div>';
 
 function checkAnswer(event) {
     let selectedBtn = event.target;
