@@ -148,3 +148,22 @@ h2 {
   font-size: 1rem;
   font-weight: 500;
 }
+
+#main-home-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-home-btn {
+  height: 35px;
+    width: 35px;
+    background-color: #ff0013;
+    color: #fafafa;
+    border: 2px solid #fafafa;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 24px;
+}
