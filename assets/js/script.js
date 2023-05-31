@@ -1,5 +1,7 @@
 const enterQuizBtn = document.getElementById('enter-quiz-btn');
 const quizHomeMenu = document.getElementById('quiz-home-menu');
+const quizRulesBtn = document.getElementById('quiz-rules-btn');
+const quizRulesMenu = document.getElementById('quiz-rules-container');
 const mainQuizHomeBtn = document.getElementById('main-home-btn');
 const difficultySelectorMenu = document.getElementById('quiz-difficulty-selection');
 const easyDifficultyBtn = document.getElementById('easy-difficulty-btn');
@@ -33,6 +35,11 @@ let playerScore = 0;
 enterQuizBtn.addEventListener('click', function () {
     quizHomeMenu.classList.add("hidden");
     difficultySelectorMenu.classList.remove("hidden");
+})
+
+quizRulesBtn.addEventListener('click', function () {
+    quizHomeMenu.classList.add("hidden");
+    quizRulesMenu.classList.remove("hidden");
 })
 
 // Reloads the window taking the user back to the home screen

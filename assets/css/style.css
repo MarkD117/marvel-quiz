@@ -82,6 +82,27 @@ h2 {
   margin: 0 40px;
 }
 
+#quiz-rules-container {
+  justify-items: center;
+  align-items: center;
+}
+
+#rules-position-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 90%;
+}
+
+li {
+  color: #fafafa;
+  margin: 10px 5px;
+}
+
 .btn {
   margin: 0 auto;
   height: 40px;
