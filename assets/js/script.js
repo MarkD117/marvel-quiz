@@ -19,6 +19,7 @@ const quizResultsScreen = document.getElementById('quiz-results-screen');
 const quizResultsText = document.getElementById('quiz-results-text');
 const quizHomeBtn = document.getElementById('home-btn');
 const quizReplayBtn = document.getElementById('replay-btn');
+const quizResultsfeedback = document.getElementById('quiz-results-feedback');
 
 let answerButtons = document.getElementsByClassName('answer-btn');
 let randomQuestions;
@@ -200,7 +201,28 @@ function resetState() {
 function displayResults() {
     quizQuestionsContainer.classList.add('hidden');
     quizResultsScreen.classList.remove('hidden');
-    quizResultsText.innerHTML = `You got ${playerScore}/5!`;
+    quizResultsText.innerHTML = `You got ${playerScore}/5 Questions Correct!`;
+
+    switch (playerScore) {
+        case 0:
+            quizResultsfeedback.innerHTML = 'You need to go back to Boot Camp!';
+            break;
+        case 1:
+            quizResultsfeedback.innerHTML = 'You should watch some more movies!';
+            break;
+        case 2:
+            quizResultsfeedback.innerHTML = 'I know you can do better!';
+            break;
+        case 3:
+            quizResultsfeedback.innerHTML = 'Even Drax can get that much!';
+            break;
+        case 4:
+            quizResultsfeedback.innerHTML = 'Very impressive, Tony would be proud!';
+            break;
+        case 5:
+            quizResultsfeedback.innerHTML = "WOW! You're a True Marvel Nut!";
+            break;
+}
 }
 
 /**
