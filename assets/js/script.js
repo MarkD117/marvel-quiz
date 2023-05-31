@@ -203,19 +203,17 @@ function displayResults() {
  * and calls the resetState function
  */
 function homeBtn() {
-    quizHomeBtn.addEventListener('click', function () {
         quizResultsScreen.classList.add('hidden');
         quizHomeMenu.classList.remove('hidden');
         playerScore = 0;
         resetState();
-    })
 }
 
 function replayQuiz() {
-    resetState();
-    runQuiz();
     quizResultsScreen.classList.add('hidden');
     playerScore = 0;
+    resetState();
+    runQuiz();
 }
 
 // Easy Questions nested data structure
