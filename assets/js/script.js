@@ -13,6 +13,7 @@ const answerButton1 = document.getElementById('answer-btn-1');
 const answerButton2 = document.getElementById('answer-btn-2');
 const answerButton3 = document.getElementById('answer-btn-3');
 const answerButton4 = document.getElementById('answer-btn-4');
+const answerBtnContainer = document.getElementById('answer-btn-container');
 const nextQuestionBtn = document.getElementById('next-btn');
 const quizResultsScreen = document.getElementById('quiz-results-screen');
 const quizResultsText = document.getElementById('quiz-results-text');
@@ -101,6 +102,11 @@ function displayQuestions(question) {
     answerButton2.innerText = question.options[1].text;
     answerButton3.innerText = question.options[2].text;
     answerButton4.innerText = question.options[3].text;
+
+    // For loop utilised to randomise the order that each answer button is shown
+    for (let i = answerBtnContainer.children.length; i >= 0; i--) {
+        answerBtnContainer.appendChild(answerBtnContainer.children[Math.random() * i | 0]);
+    }
 
     for (let i of answerButtons) {
         i.onclick = checkAnswer;
