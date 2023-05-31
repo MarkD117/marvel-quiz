@@ -167,3 +167,8 @@ h2 {
     cursor: pointer;
     line-height: 24px;
 }
+
+#main-home-btn:hover {
+  background-color: #fafafa;
+  color: #ff0013;
+}
