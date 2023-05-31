@@ -114,7 +114,7 @@ h2 {
   align-items: center;
 }
 
-#question, #quiz-results-text  {
+#question, #quiz-results-text, #quiz-results-feedback  {
   font-size: 17px;
   color: #fafafa;
   text-align: center;
@@ -124,6 +124,11 @@ h2 {
 
 #quiz-results-text {
   font-size: 25px;
+}
+
+#quiz-results-feedback {
+  padding: 10px 0;
+  font-size: 20px;
 }
 
 .answer-btn {
