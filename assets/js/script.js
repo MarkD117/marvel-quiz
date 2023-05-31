@@ -17,6 +17,7 @@ const nextQuestionBtn = document.getElementById('next-btn');
 const quizResultsScreen = document.getElementById('quiz-results-screen');
 const quizResultsText = document.getElementById('quiz-results-text');
 const quizHomeBtn = document.getElementById('home-btn');
+const quizReplayBtn = document.getElementById('replay-btn');
 
 let answerButtons = document.getElementsByClassName('answer-btn');
 let randomQuestions;
@@ -85,6 +86,7 @@ function runQuiz() {
     
     nextQuestionBtn.onclick = nextQuestion;
     quizHomeBtn.onclick = homeBtn;
+    quizReplayBtn.onclick = replayQuiz;
 }
 
 /**
@@ -207,6 +209,13 @@ function homeBtn() {
         playerScore = 0;
         resetState();
     })
+}
+
+function replayQuiz() {
+    resetState();
+    runQuiz();
+    quizResultsScreen.classList.add('hidden');
+    playerScore = 0;
 }
 
 // Easy Questions nested data structure
