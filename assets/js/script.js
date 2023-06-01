@@ -27,6 +27,7 @@ let answerButtons = document.getElementsByClassName('answer-btn');
 let randomQuestions;
 let indexOfCurrentQuestion;
 let playerScore = 0;
+let questionCounter = 1;
 
 /**
  * Event listener added to the quiz button on the quiz home screen
@@ -105,7 +106,7 @@ function runQuiz() {
  * @param {Current object in the selected question array} question 
  */
 function displayQuestions(question) {
-    currentQuestion.innerText = question.question
+    currentQuestion.innerText = questionCounter + '. ' +question.question
     answerButton1.innerText = question.options[0].text;
     answerButton2.innerText = question.options[1].text;
     answerButton3.innerText = question.options[2].text;
@@ -167,6 +168,8 @@ function checkAnswer(event) {
         i.classList.remove('answer-btn-hover');
         i.style.cursor = 'auto';
     }
+
+    questionCounter++;
 }
 
 
