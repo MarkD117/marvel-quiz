@@ -291,4 +291,12 @@ li {
   #quiz-container {
     max-width: 800px
   }
+
+  #quiz-home-menu {
+    width: 500px;
+  }
+
+  #quiz-results-text, #quiz-results-feedback  {
+    font-size: 25px;
+  }
 }
