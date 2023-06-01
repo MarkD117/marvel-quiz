@@ -141,13 +141,13 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - The quiz home page consists of two main buttons. These are the Quiz button and the Rules button. Upon clicking the Quiz button, the quiz home menu will disappear and the select difficulty menu will be shown to the player. Similarly, when the Rules button is clicked, the home menu will disappear, and the quiz rules will be shown to the player.
 
-![Screenshot](documentation/quiz-home-menu.png)
+    ![Screenshot](documentation/quiz-home-menu.png)
 
 ### Quiz Rules menu
 
 - The quiz rules menu explains to the user how to play the game and how the quiz functions.
 
-![Screenshot](documentation/quiz-rules-menu.png)
+    ![Screenshot](documentation/quiz-rules-menu.png)
 
 ### Main Quiz Home Button
 
@@ -155,7 +155,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - The main funtion of this home button is to refresh the page and return the user to the home page when clicked by the player.
 
-![Screenshot](documentation/main-quiz-home-button.png)
+    ![Screenshot](documentation/main-quiz-home-button.png)
 
 ### Quiz Difficulty Selection
 
@@ -163,7 +163,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - The player can replay the quiz and choose a new difficulty each time which will provide them with different questions for all three options.
 
-![Screenshot](documentation/quiz-difficulty-selection.png)
+    ![Screenshot](documentation/quiz-difficulty-selection.png)
 
 ### Quiz Ready Up menu
 
@@ -171,4 +171,4 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - On the menu there is a Start Quiz button. When clicked, the quiz starts and the user can begin to play the game.
 
-![Screenshot](documentation/quiz-ready-up-menu.png)
+    ![Screenshot](documentation/quiz-ready-up-menu.png)
