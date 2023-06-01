@@ -164,3 +164,11 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 - The player can replay the quiz and choose a new difficulty each time which will provide them with different questions for all three options.
 
 ![Screenshot](documentation/quiz-difficulty-selection.png)
+
+### Quiz Ready Up menu
+
+- After selecting a difficulty, the player will be presented with a ready up menu before starting the quiz. This allows the player to gather their thoughts and essentially, get ready before starting the quiz.
+
+- On the menu there is a Start Quiz button. When clicked, the quiz starts and the user can begin to play the game.
+
+![Screenshot](documentation/quiz-ready-up-menu.png)
