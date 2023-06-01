@@ -46,9 +46,15 @@ Generally, white text is for headings and black text is for buttons. This increa
 ![Screenshot](documentation/incorrect-color-palette.png)
 
 ### Fonts & Icons
-- The 'Poppins' font was used for all text in the quiz. This font was sourced from [google fonts](https://fonts.google.com/).
+- The 'Poppins' font was used for all text in the quiz. 
 
-- The home icon on the main page was sourced from [Font Awesome](https://fontawesome.com/).
+This font was sourced from [google fonts](https://fonts.google.com/).
+
+- The home icon used on the main page
+- Tick icon used for answer buttons
+- Cross icon used for answer buttons
+
+Icons sourced from [Font Awesome](https://fontawesome.com/).
 
 ## User Stories
 
