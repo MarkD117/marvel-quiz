@@ -189,3 +189,21 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - The question displayed is randomly selected from an array based on the difficulty chosen by the player. The buttons are also randomly organised from top to bottom which provides the player with a highly replayable experience. Each time the user replays the quiz, the questions and buttons will be in a different order.
 
+#### Selecting an Answer
+
+- When the player selects an answer, a function will run that checks if the selected answer is correct. If the answer the player selected is correct, the button will turn a green colour and the next question button will appear. 
+
+- If the answer the player selects is found to be incorrect, the selected button will turn red and the correct answer will be highlighted green.
+
+- Depending on whether the answer button is correct or incorrect, a tick or cross icon will appear under the text of the button.
+
+- After the player has selected an answer, all buttons become disabled and can no longer be clicked. The `cursor: pointer;` property is also removed further showing the user that the buttons are not clickable. 
+
+- Any buttons that are not highlighted as correct/incorrect will be greyed out further distinguishing the other relevant answers.
+
+- The next button is hidden until the player selects an answer. Clicking the button will display the next question and reset the state of the answer buttons allowing the player to select another answer.
+
+- Below we can see what the quiz questions page looks like after the player selects an icorrect answer.
+
+    ![Screenshot](documentation/answered-question.png)
+
