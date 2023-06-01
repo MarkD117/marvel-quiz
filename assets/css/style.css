@@ -113,6 +113,7 @@ li {
   border-radius: 5px;
   border: 5px double #ff0013;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -162,6 +163,7 @@ li {
   border-radius: 5px;
   border: 5px double #ff0013;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 
 .answer-btn-hover:hover {
