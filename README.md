@@ -157,7 +157,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 ### Main Quiz Home Button
 
-- The main quiz home button is displayed to the player at all times. It can be seen under the quiz content denoted by a 'Home' icon. This button has a hover effect that reverses the colours and will turn the cursor to a pointer if it is placed over it.
+- The main quiz home button is displayed to the player at all times. It can be seen under the quiz content denoted by a 'Home' icon. This button has a hover effect that reverses the colours and will turn the cursor to a pointer if it is placed over it. Hover effect can be seen below.
 
 - The main funtion of this home button is to refresh the page and return the user to the home page when clicked by the player.
 
