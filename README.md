@@ -217,3 +217,14 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
     ![Screenshot](documentation/question-counter.png)
 
+### Quiz Results Menu
+
+- After completing the quiz, the quiz questions screen will disappear and the Quiz Results Menu will be shown to the user. There is a few interesting features in this menu. First of which, is a score tracker. When the user selects a correct answer, their score will be increased by 1. After they have answered the final question, they will be presented with their score value, depending on how many questions they answered correctly.
+
+- As well as tracking the player score, personalised messages will be displayed, depending on how many questions the player answered correctly. Below we can see the message displayed after answering all five questions correctly.
+
+- There are two buttons on the results menu. These are the Replay Quiz and Main Menu buttons. If the player clicks the replay quiz button, it will allow them to re-take the same difficulty quiz again without having to return to the main home menu. If you don't get a perfect score the first time, this button will let you take the quiz again.
+
+- Clicking the main menu button will reset the quiz, hide the results screen and bring the user back to the main home menu.
+
+    ![Screenshot](documentation/quiz-results-5-correct.png)
