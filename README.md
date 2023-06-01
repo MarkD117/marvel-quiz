@@ -49,3 +49,11 @@ Generally, white text is for headings and black text is for buttons. This increa
 - The 'Poppins' font was used for all text in the quiz. This font was sourced from [google fonts](https://fonts.google.com/).
 
 - The home icon on the main page was sourced from [Font Awesome](https://fontawesome.com/).
+
+## User Stories
+
+- As a new site user, I'd like to understand the site's goal so that I can determine whether I would like to use it or not.
+- As a new site user, I'd like to understand how to play the game.
+- As a new site user, I'd like the navigation to be simple and easy to understand.
+- As a new site user, I'd like the site to be interesting to look at and fun to play.
+- Ad a new site user, I'd like the game to test my knowledge and give me feedback on my progress.
