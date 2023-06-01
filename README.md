@@ -134,3 +134,11 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 | Mobile | ![screenshot](documentation/wireframes/quiz-ready-up-menu-mobile.png) |
 
 </details>
+
+## Features
+
+### Quiz Home Page
+
+- The quiz home page consists of two main buttons. These are the Quiz button and the Rules button. Upon clicking the Quiz button, the quiz home menu will disappear and the select difficulty menu will be shown to the player. Similarly, when the Rules button is clicked, the home menu will disappear, and the quiz rules will be shown to the player.
+
+![Screenshot](documentation/quiz-home-menu.png)
