@@ -207,3 +207,13 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
     ![Screenshot](documentation/answered-question.png)
 
+#### Quiz Question Number
+
+- In front of the question is the question number. This allows the player to keep track of what question they are on and how many they have left to answer. The question counter is a separate entity to the questions as the questions appear in a random order.
+
+- Each time a new question is displayed, the question counter is increased by 1. If the quiz is replayed or a new difficulty is selected. The counter is reset to 1.
+
+- Below you can see that the number of the question has increased as we have moved on to the next question in the set.
+
+    ![Screenshot](documentation/question-counter.png)
+
