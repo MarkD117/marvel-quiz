@@ -20,3 +20,27 @@ Again, this button style theme is kept consistant throughout the quiz with small
 Marvel traditionally tend to use very bright and bold colours. As the background is already very vibrant, colourful and active, the quiz uses quite a simple colour palette as not too over-stimulate the player with a plethora of different colours. A deep red and off white colours were used interchangeably for backgrounds and outlines. If text is on a red background, it is set to off-white. If text is on a white background, it is set to black. 
 
 Generally, white text is for headings and black text is for buttons. This increases the readability for the user. The deep red colour is applied to main button text using hover effects. This black, red and white colour Scheme is used throughout the quiz and contrasts well with the blue of the main quiz background. There are two separate colour schemes used for the correct and incorrect styles set for the answer buttons after the user selects and option. The HEX codes and colour palettes can be seen below!
+
+#### Main Colour Palette
+
+- `#000000` used for button text.
+- `#FAFAFA` used for heading text, borders & backgrounds.
+- `#FF0013` used for borders & backgrounds.
+
+![Screenshot](documentation/main-color-palette.png)
+
+#### Correct Colour Palette
+
+- `#155724` used for button text.
+- `#D4EDDA` used for button background.
+- `#C3E6CB` used for button border.
+
+![Screenshot](documentation/correct-color-palette.png)
+
+#### Incorrect Colour Palette
+
+- `#721C24` used for button text.
+- `#F8D7DA` used for button background.
+- `#F5C6CB` used for button border.
+
+![Screenshot](documentation/incorrect-color-palette.png)
