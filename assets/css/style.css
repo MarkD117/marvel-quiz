@@ -168,6 +168,12 @@ li {
   margin: 0 10px;
 }
 
+/* Question text given bottom padding for breathing room. Set to 8px to account for 2px margin on top answer button for a 10px gap*/
+
+#question {
+  padding-bottom: 8px;
+}
+
 #quiz-results-text {
   font-size: 25px;
 }
@@ -244,6 +250,39 @@ li {
 #main-home-btn:hover {
   background-color: #fafafa;
   color: #ff0013;
+}
+
+/* Media query for screen sizes 600px and above */
+
+@media screen and (min-width: 600px) {
+  h2 {
+    font-size: 30px;
+    margin: 0 20px;
+  }
+
+  .btn {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+  }
+  
+  .btn:hover {
+    height: 60px;
+    width: 210px;
+    font-size: 22px;
+  }
+
+  #question, #quiz-results-text, #quiz-results-feedback  {
+    font-size: 20px;
+  }
+
+  .answer-btn {
+    font-size: 17px;
+  }
+  
+  .answer-btn-hover:hover {
+    font-size: 19px;
+  }
 }
 
 /* Media query for screen sizes 1030px and above */
