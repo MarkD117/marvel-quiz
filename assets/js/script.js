@@ -23,11 +23,11 @@ const quizHomeBtn = document.getElementById('home-btn');
 const quizReplayBtn = document.getElementById('replay-btn');
 const quizResultsfeedback = document.getElementById('quiz-results-feedback');
 
-let answerButtons = document.getElementsByClassName('answer-btn');
-let randomQuestions;
-let indexOfCurrentQuestion;
-let playerScore = 0;
-let questionCounter = 1;
+let answerButtons = document.getElementsByClassName('answer-btn'); // HTML Array used to access all answer buttons
+let randomQuestions; // Variable set to the array of questions from the difficulty selector function
+let indexOfCurrentQuestion; // Variable tracks the index of the current question
+let playerScore; // Variable tracks the player score, value set in runQuiz function
+let questionCounter; // Variable tracks question the player is on, value set in runQuiz function
 
 /**
  * Event listener added to the quiz button on the quiz home screen
@@ -38,14 +38,18 @@ enterQuizBtn.addEventListener('click', function () {
     difficultySelectorMenu.classList.remove("hidden");
 })
 
+/**
+ * Event listener added to the rules button on the quiz home screen
+ * that listens for clicks. It will bring the user to the rules screen 
+ */
 quizRulesBtn.addEventListener('click', function () {
     quizHomeMenu.classList.add("hidden");
     quizRulesMenu.classList.remove("hidden");
 })
 
 // Reloads the window taking the user back to the home screen
-mainQuizHomeBtn.onclick = ()=>{
-    window.location.reload(); 
+mainQuizHomeBtn.onclick = () => {
+    window.location.reload();
 }
 
 //Difficulty buttons have event listeners that when clicked, will run the difficulty seletor function
@@ -73,7 +77,7 @@ function difficultySelector(event) {
         case 'hard-difficulty-btn':
             randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
             break;
-}
+    }
 }
 
 // Event listener added to start button that will run the runQuiz function
@@ -81,19 +85,25 @@ startQuizBtn.addEventListener('click', runQuiz);
 
 /**
  * This is the main function that runs the quiz game. It starts by hiding the ready up menu
- * and displaying the quiz questions. It sets the index of the of the current question to 0
- * and runs the displayQuestions function. When clicking the next question button, the 
- * nextQuestion function is run. When clicking the home button, the HomeBtn function is run.
+ * and displaying the quiz questions. The playerScore variable is initialised to 0 and the 
+ * questionCounter variable is initialised to 1.
+ * 
+ * It sets the index of the of the current question to 0 and runs the displayQuestions function. 
+ * When clicking the next question button, the nextQuestion function is run. When clicking the 
+ * home button, the HomeBtn function is run. Similarly, when clicking the replay button, the replay 
+ * quiz funtion is run.
  */
 function runQuiz() {
     quizReadyUpMenu.classList.add('hidden');
     nextQuestionBtn.classList.add('hidden');
     quizQuestionsContainer.classList.remove('hidden');
-    
+
+    playerScore = 0;
+    questionCounter = 1;
     indexOfCurrentQuestion = 0;
     displayQuestions(randomQuestions[indexOfCurrentQuestion]);
 
-    
+
     nextQuestionBtn.onclick = nextQuestion;
     quizHomeBtn.onclick = homeBtn;
     quizReplayBtn.onclick = replayQuiz;
@@ -101,12 +111,13 @@ function runQuiz() {
 
 /**
  * This function will set the inner text of the question element to the text of the selected question in the array/object.
+ * As well as that, the question number will also be shown infront of the question.
  * It will also set the text of the buttons to the options text in the same selected question array/object.
  * A for of loop is used to set the onclick event attribute to run the checkAnswer function for each button.
  * @param {Current object in the selected question array} question 
  */
 function displayQuestions(question) {
-    currentQuestion.innerText = questionCounter + '. ' +question.question
+    currentQuestion.innerText = questionCounter + '. ' + question.question;
     answerButton1.innerText = question.options[0].text;
     answerButton2.innerText = question.options[1].text;
     answerButton3.innerText = question.options[2].text;
@@ -122,24 +133,26 @@ function displayQuestions(question) {
     }
 }
 
+// creating the new div tags the correct and incorrect icons
+let tickIconTag = '<div class="icon tick"><i class="fa-regular fa-circle-check"></i></div>';
+let crossIconTag = '<div class="icon cross"><i class="fa-regular fa-circle-xmark"></i></div>';
+
 /**
  * This function assigns the user selected answer and the correct answer to variables.
  * 
  * If the user's selected answer is equal to the correct answer - the selected button will have the
  * correct style applied and the playerScore/indexOfCurrentQuestion variables will be incremented.
+ * A tick icon will also be displayed.
  * 
  * If the answers do not match - the selected button will have the incorrect style applied and a for
- * of loop runs checking the innerText of the other answeButtons. When the loops finds a match with 
- * the correct answer, the correct style will be applied. The question index is then incremented.
+ * of loop runs checking the innerText of the other answerButtons. When the loops finds a match with 
+ * the correct answer, the correct style will be applied. The question index is then incremented and
+ * both tick and cross icons will display on each relative button.
  * 
- * Once the user selects an answer, all buttons attributes are set to disabled
+ * Once the user selects an answer, all buttons attributes are set to disabled, the button hover 
+ * effect is removed and the cursor property is set to auto. The question counter is also incremented.
  * @param {Button clicked by the user} event 
  */
-
-// creating the new div tags the correct and incorrect icons
-let tickIconTag = '<div class="icon tick"><i class="fa-regular fa-circle-check"></i></div>';
-let crossIconTag = '<div class="icon cross"><i class="fa-regular fa-circle-xmark"></i></div>';
-
 function checkAnswer(event) {
     let selectedBtn = event.target;
     let selectedAnswer = selectedBtn.innerText;
@@ -180,8 +193,8 @@ function checkAnswer(event) {
  */
 function nextQuestion() {
     let quizLength = 4;
-    nextQuestionBtn.addEventListener('click', function(){
-        if (indexOfCurrentQuestion > quizLength ) {
+    nextQuestionBtn.addEventListener('click', function () {
+        if (indexOfCurrentQuestion > quizLength) {
             displayResults()
         } else {
             nextQuestionBtn.classList.add('hidden');
@@ -192,11 +205,12 @@ function nextQuestion() {
 }
 
 /**
- * This function utilises a for loop that removes correct/incorrect styles from the answer buttons.
- * It also removes the disabled attribute from the buttons allowing the user to select a new answer.
+ * This function utilises a for loop that removes correct/incorrect styles from the answer buttons
+ * and removes the disabled attribute from the buttons allowing the user to select a new answer.
+ * The function will re-enable the button hover effects and return the cursor property to pointer.
  */
 function resetState() {
-    
+
     for (let i of answerButtons) {
         i.classList.remove('correct');
         i.classList.remove('incorrect');
@@ -209,6 +223,9 @@ function resetState() {
 /**
  * This function will hide the quiz questions and display the quiz results screen.
  * It tracks the player score and displays it to the user.
+ * 
+ * It will also utilises a switch case statement to display personalised messages 
+ * depending on the userScore value set by the player of the quiz.
  */
 function displayResults() {
     quizQuestionsContainer.classList.add('hidden');
@@ -234,24 +251,26 @@ function displayResults() {
         case 5:
             quizResultsfeedback.innerHTML = "WOW! You're a True Marvel Nut!";
             break;
-}
+    }
 }
 
 /**
- * This function has an event listener on the home button that when clicked
- * will bring the user back to the home screen, set the playerScore back to 0
- * and calls the resetState function
+ * When called, this function will bring the user back to the home screen, 
+ * and calls the resetState function.
  */
 function homeBtn() {
-        quizResultsScreen.classList.add('hidden');
-        quizHomeMenu.classList.remove('hidden');
-        playerScore = 0;
-        resetState();
+    quizResultsScreen.classList.add('hidden');
+    quizHomeMenu.classList.remove('hidden');
+    resetState();
 }
 
+/**
+ * When called, this function will hide the results screen, resets
+ * the quiz state and runs the runQuiz function, allowing the player to
+ * re-take the same quiz again without returning to the main menu.
+ */
 function replayQuiz() {
     quizResultsScreen.classList.add('hidden');
-    playerScore = 0;
     resetState();
     runQuiz();
 }
