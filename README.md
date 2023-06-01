@@ -184,3 +184,8 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 - Upon starting the quiz, the ready up menu will disappear and Quiz Questions Page will be shown. the player will be presented with a question at the top of top of the main quiz container. Underneath the question are four selectable buttons.
 
     ![Screenshot](documentation/quiz-question-menu.png)
+
+#### Quiz Questions & Answer Buttons
+
+- The question displayed is randomly selected from an array based on the difficulty chosen by the player. The buttons are also randomly organised from top to bottom which provides the player with a highly replayable experience. Each time the user replays the quiz, the questions and buttons will be in a different order.
+
