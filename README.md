@@ -148,3 +148,11 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 - The quiz rules menu explains to the user how to play the game and how the quiz functions.
 
 ![Screenshot](documentation/quiz-rules-menu.png)
+
+### Main Quiz Home Button
+
+- The main quiz home button is displayed to the player at all times. It can be seen under the quiz content denoted by a 'Home' icon. This button has a hover effect that reverses the colours and will turn the cursor to a pointer if it is placed over it.
+
+- The main funtion of this home button is to refresh the page and return the user to the home page when clicked by the player.
+
+![Screenshot](documentation/main-quiz-home-button.png)
