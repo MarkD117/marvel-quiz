@@ -155,7 +155,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - The main funtion of this home button is to refresh the page and return the user to the home page when clicked by the player.
 
-    ![Screenshot](documentation/main-quiz-home-button.png)
+    ![Screenshot](documentation/main-quiz-home-button.png)  ![Screenshot](documentation/main-quiz-home-button-hover.png)
 
 ### Quiz Difficulty Selection
 
