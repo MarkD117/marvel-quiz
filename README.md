@@ -57,3 +57,80 @@ Generally, white text is for headings and black text is for buttons. This increa
 - As a new site user, I'd like the navigation to be simple and easy to understand.
 - As a new site user, I'd like the site to be interesting to look at and fun to play.
 - Ad a new site user, I'd like the game to test my knowledge and give me feedback on my progress.
+
+
+## Wirefames
+
+During the planning stages, I  created wireframes for all pages of the site. [Balsamiq](https://balsamiq.com/wireframes) to design the digital wireframes. All wireframes can be seen below.
+
+### Quiz Home Page Wireframes
+
+<details>
+<summary>Click to see the Quiz Home Page Wireframes</summary>
+
+| Type | Image |
+| --- | --- |
+| Desktop | ![screenshot](documentation/wireframes/quiz-home-desktop.png) |
+| Mobile | ![screenshot](documentation/wireframes/quiz-home-mobile.png) |
+
+</details>
+
+### Quiz Rules Menu Wireframes
+
+<details>
+<summary>Click to see the Quiz Rules Menu Wireframes</summary>
+
+| Type | Image |
+| --- | --- |
+| Desktop | ![screenshot](documentation/wireframes/quiz-rules-menu-desktop.png) |
+| Mobile | ![screenshot](documentation/wireframes/quiz-rules-menu-mobile.png) |
+
+</details>
+
+### Difficulty Selection Menu Wireframes
+
+<details>
+<summary>Click to see Difficulty Selection Menu Wireframes</summary>
+
+| Type | Image |
+| --- | --- |
+| Desktop | ![screenshot](documentation/wireframes/difficulty-selection-menu-desktop.png) |
+| Mobile | ![screenshot](documentation/wireframes/difficulty-selection-menu-mobile.png) |
+
+</details>
+
+### Quiz Ready Up Menu Wireframes
+
+<details>
+<summary>Click to see the Quiz Ready Up Menu Wireframes</summary>
+
+| Type | Image |
+| --- | --- |
+| Desktop | ![screenshot](documentation/wireframes/quiz-ready-up-menu-desktop.png) |
+| Mobile | ![screenshot](documentation/wireframes/quiz-ready-up-menu-mobile.png) |
+
+</details>
+
+### Quiz Questions Page Wireframes
+
+<details>
+<summary>Click to see the Quiz Questions Page Wireframes</summary>
+
+| Type | Image |
+| --- | --- |
+| Desktop | ![screenshot](documentation/wireframes/questions-page-desktop.png) |
+| Mobile | ![screenshot](documentation/wireframes/questions-page-mobile.png) |
+
+</details>
+
+### Quiz Results Menu Wireframes
+
+<details>
+<summary>Click to see the Quiz Results Menu Wireframes</summary>
+
+| Type | Image |
+| --- | --- |
+| Desktop | ![screenshot](documentation/wireframes/quiz-results-menu-desktop.png) |
+| Mobile | ![screenshot](documentation/wireframes/quiz-ready-up-menu-mobile.png) |
+
+</details>
