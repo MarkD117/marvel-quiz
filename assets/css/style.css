@@ -1,16 +1,22 @@
 /* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+/* Generic game styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Main game background image */
+
 html {
   background: url("../images/main-quiz-background-img.jpg") no-repeat center center;
   background-size: cover;
 }
+
+/* Display grid and font family set to entire body */
 
 body {
   display: grid;
@@ -25,9 +31,13 @@ main {
   justify-content: center;
 }
 
+/* Hidden class used to hide menus */
+
 .hidden {
   display: none;
 }
+
+/* Styles to be applied to answer buttons if answered correctly or incorrectly */
 
 .correct {
   color: #155724;
@@ -41,6 +51,8 @@ main {
   border: 1px solid #f5c6cb;
 }
 
+/* Main quiz container style */
+
 #quiz-container {
   background: url("../images/quiz-background-image-2.jpg") no-repeat center center;
   max-width: 80%;
@@ -53,6 +65,8 @@ main {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
+
+/* styling the Main quiz heading */
 
 header {
   display: grid;
@@ -75,12 +89,16 @@ h1 {
   border: 2px solid #fafafa;
 }
 
+/* Style for all other quiz headings */
+
 h2 {
   font-size: 20px;
   color: #fafafa;
   text-align: center;
   margin: 0 40px;
 }
+
+/* style for rules section */
 
 #quiz-rules-container {
   justify-items: center;
@@ -103,6 +121,8 @@ li {
   margin: 10px 5px;
 }
 
+/* main default button style */
+
 .btn {
   margin: 0 auto;
   height: 40px;
@@ -124,6 +144,8 @@ li {
   transition: all 0.3s ease;
 }
 
+/* Grid display set to button containers */
+
 #home-menu-button-container,
 #difficulty-button-container,
 #start-quiz-button-container,
@@ -135,6 +157,8 @@ li {
   justify-items: center;
   align-items: center;
 }
+
+/* Specific styles set to questions and quiz results */
 
 #question, #quiz-results-text, #quiz-results-feedback  {
   font-size: 17px;
@@ -153,6 +177,8 @@ li {
   font-size: 20px;
 }
 
+/* Separate style for answer buttons */
+
 .answer-btn {
   margin: 0 auto;
   height: auto;
@@ -166,6 +192,8 @@ li {
   cursor: pointer;
 }
 
+/* Answer button hover effect set to separate style to be accessed by JavaScript */
+
 .answer-btn-hover:hover {
   height: auto;
   width: 90%;
@@ -174,11 +202,15 @@ li {
   transition: all 0.3s ease;
 }
 
+/* Next button style */
+
 #next-btn {
   width: 100px;
   font-size: 1rem;
   font-weight: 500;
 }
+
+/* Next button hover style */
 
 #next-btn:hover {
   font-size: 20px;
@@ -187,6 +219,8 @@ li {
   color: #FF0013;
   transition: all 0.3s ease;
 }
+
+/* Style for main quiz home button */
 
 #main-home-btn-container {
   display: flex;
