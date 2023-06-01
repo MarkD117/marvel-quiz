@@ -124,6 +124,7 @@ li {
 /* main default button style */
 
 .btn {
+  color: #000000;
   margin: 0 auto;
   height: 40px;
   width: 150px;
@@ -186,6 +187,7 @@ li {
 /* Separate style for answer buttons */
 
 .answer-btn {
+  color: #000000;
   margin: 0 auto;
   height: auto;
   width: 85%;
