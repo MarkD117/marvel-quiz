@@ -201,3 +201,11 @@ li {
   background-color: #fafafa;
   color: #ff0013;
 }
+
+/* Media query for screen sizes 1030px and above */
+
+@media screen and (min-width: 1030px) {
+  #quiz-container {
+    max-width: 800px
+  }
+}
