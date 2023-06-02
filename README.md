@@ -527,3 +527,9 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 | [Sitepoint](https://www.sitepoint.com/simple-javascript-quiz/) | Quiz | Question structure inspiration |
 | [Readme.so](https://readme.so/) | Markdown | Tool used for visualising creating and visualising readme content |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder/) | Markdown | Assistance in creating markdown content |
+
+## Acknowledgements 
+
+I would like to thank my mentor Chris Quinn, my cohort mentor Alan Bushell, the Code Institute team and the Slack community.  
+
+[Back to top](#marvel-quiz)
