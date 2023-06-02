@@ -182,6 +182,66 @@ const mediumQuestions = [
 
         answer: 'Hawkeye'
     },
+
+    {
+        question: 'What is the name of the protocol that Tony Star enacts in Iron Man 3?',
+        options: [
+            { text: 'The Doomsday Protocol'},
+            { text: 'The Contingency Plan Protocol'},
+            { text: 'The Clean Slate Protocol'},
+            { text: 'The Full Eclipse Protocol'}
+        ],
+
+        answer: 'The Clean Slate Protocol'
+    },
+
+    {
+        question: 'Which infinity stone do the Guardians have to save in Guardians of the Galaxy Vol. 1?',
+        options: [
+            { text: 'The power stone'},
+            { text: 'The reality stone'},
+            { text: 'The space stone'},
+            { text: 'The time stone'}
+        ],
+
+        answer: 'The power stone'
+    },
+
+    {
+        question: 'What is the name of the drone piloted by Sam Wilson in Captain America: Civil War?',
+        options: [
+            { text: 'Dart'},
+            { text: 'Redwing'},
+            { text: 'Night Hawk'},
+            { text: 'Sparrow'}
+        ],
+
+        answer: 'Redwing'
+    },
+
+    {
+        question: "What are the names of Wanda's kids?",
+        options: [
+            { text: 'Danny and Johnny'},
+            { text: 'Reiley and Lewis'},
+            { text: 'Billy and Tommy'},
+            { text: 'Charlie and Peter'}
+        ],
+
+        answer: 'Billy and Tommy'
+    },
+
+    {
+        question: "What is the name of the dwarf who made Thanos' gauntlet?",
+        options: [
+            { text: 'Gimli'},
+            { text: 'Andvari'},
+            { text: 'Fáfnir'},
+            { text: 'Eitiri'}
+        ],
+
+        answer: 'Eitiri'
+    }
 ];
 
 // Hard Questions nested data structure
