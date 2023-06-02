@@ -257,3 +257,35 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 - GitHub used to store game source code.
 - GitHub Pages used to deploy the main game
 - Gitpod used as a cloud-based IDE for developing the game.
+
+## Testing
+
+### Code Validation
+
+[HTML W3C Validator](https://validator.w3.org) was used to validate the html code. No errors were found.
+
+- index.html Validation
+   
+    ![index.html-validation screenshot](documentation/html-validation.png)
+
+
+[CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) was used to validate CSS files. No errors were found.
+
+- style.css Validation
+    
+    ![style.css-validation screenshot](documentation/css-validation.png)
+
+
+[JSHint](https://jshint.com/) was used to validate JavaScript files. No significant errors were found; however, there are some warnings that are addressed in further detail in the [Known Bugs](##known-bugs) section.
+
+- script.js Validation
+
+    ![script.js-validation screenshot](documentation/jshint-script.js-img1.png)
+
+    ![script.js-validation screenshot](documentation/jshint-script.js-img2.png)
+
+    ![script.js-validation screenshot](documentation/jshint-script.js-img3.png)
+
+- questions.js Validation
+
+    ![questions.js-validation screenshot](documentation/jshint-questions.js-img.png)
