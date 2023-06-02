@@ -335,3 +335,10 @@ The site has been tested on the following browsers:
 | Main Home Button | Hover on button | Cursor changes to pointer | pass
 | Quiz Home Page Buttons | Hover on button | Shows button hover effect | pass
 | Quiz Home Page Buttons | Hover on button | Cursor changes to pointer | pass
+
+#### **Quiz Rules Menu**
+
+| Item | Test | Expected Outcome | Result | 
+|--|--|--|--|
+| Rules | Click rules button | All rules are displayed and can be seen clearly | pass
+| Rules | Click rules button | Rules container size changes for mobile | pass
