@@ -246,3 +246,13 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 ### Increase Quiz Questions
 
 - In future, I also want to increase the number of questions shown to the player. Increasing the number of questions would allow the user to have a more detailed experience when playing the quiz.
+
+## Technologies Used
+
+- HTML used to create main site content.
+- CSS used designing and styling the layout of the site.
+- JavaScript used to implement features and functionality to the game.
+- Git used for version control
+- GitHub used to store game source code.
+- GitHub Pages used to deploy the main game
+- Gitpod used as a cloud-based IDE for developing the game.
