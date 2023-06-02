@@ -59,7 +59,7 @@ const easyQuestions = [
 
         answer: 'Howard'
     },
-]
+];
 
 // Medium Questions nested data structure
 const mediumQuestions = [
@@ -122,7 +122,7 @@ const mediumQuestions = [
 
         answer: 'Hawkeye'
     },
-]
+];
 
 // Hard Questions nested data structure
 const hardQuestions = [
@@ -185,4 +185,4 @@ const hardQuestions = [
 
         answer: 'Eight'
     },
-]
+];
