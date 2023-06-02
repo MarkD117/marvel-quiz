@@ -36,7 +36,7 @@ let questionCounter; // Variable tracks question the player is on, value set in 
 enterQuizBtn.addEventListener('click', function () {
     quizHomeMenu.classList.add("hidden");
     difficultySelectorMenu.classList.remove("hidden");
-})
+});
 
 /**
  * Event listener added to the rules button on the quiz home screen
@@ -45,12 +45,12 @@ enterQuizBtn.addEventListener('click', function () {
 quizRulesBtn.addEventListener('click', function () {
     quizHomeMenu.classList.add("hidden");
     quizRulesMenu.classList.remove("hidden");
-})
+});
 
 // Reloads the window taking the user back to the home screen
 mainQuizHomeBtn.onclick = () => {
     window.location.reload();
-}
+};
 
 //Difficulty buttons have event listeners that when clicked, will run the difficulty seletor function
 easyDifficultyBtn.addEventListener("click", difficultySelector);
@@ -168,7 +168,7 @@ function checkAnswer(event) {
         selectedBtn.classList.add('incorrect');
         for (let i of answerButtons) {
             if (i.innerText === correctAnswer) {
-                i.classList.add('correct')
+                i.classList.add('correct');
                 i.insertAdjacentHTML("beforeend", tickIconTag);
             }
         }
@@ -195,13 +195,13 @@ function nextQuestion() {
     let quizLength = 4;
     nextQuestionBtn.addEventListener('click', function () {
         if (indexOfCurrentQuestion > quizLength) {
-            displayResults()
+            displayResults();
         } else {
             nextQuestionBtn.classList.add('hidden');
             displayQuestions(randomQuestions[indexOfCurrentQuestion]);
             resetState();
         }
-    })
+    });
 }
 
 /**
