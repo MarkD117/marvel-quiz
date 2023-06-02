@@ -265,7 +265,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 - HTML used to create main site content.
 - CSS used designing and styling the layout of the site.
 - JavaScript used to implement features and functionality to the game.
-- Chrome DevTools - Used to debug and test responsiveness of the site
+- Chrome DevTools used to debug and test responsiveness of the site.
 - Git used for version control
 - GitHub used to store game source code.
 - GitHub Pages used to deploy the main game
@@ -314,7 +314,7 @@ The site scored an almost perfect score with only the performance section gettin
 ![A11Y screenshot](documentation/a11y-contrast-accessibility-validator.png)
 
 
-[Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) was also used to test the initial color contrasts. As we can see below, the off-white text fails the contrast ratio on smaller text. That said, there is no text that size in the Marvel Quiz project.
+[Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) was also used to test the initial color contrasts. As we can see below, the off-white text fails the contrast ratio on smaller text. That said, there is no text that small in the Marvel Quiz project.
 
 ![Adobe Color screenshot](documentation/adobe-color-contrast-check-img1.png)
 
