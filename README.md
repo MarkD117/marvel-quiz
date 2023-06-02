@@ -351,3 +351,11 @@ The site has been tested on the following browsers:
 | Difficulty Buttons | Hover on button | Cursor changes to pointer | pass
 | Difficulty Buttons | Click button | Sets the question pool to the chosen difficulty | pass
 | Difficulty Buttons | Click button | Hides the difficulty selection menu and shows the ready up menu | pass
+
+#### **Quiz Ready Up Menu**
+
+| Item | Test | Expected Outcome | Result | 
+|--|--|--|--|
+| Start Quiz Button | Hover on button | Button hover styles are shown | pass
+| Start Quiz Button | Hover on button | Cursor changes to pointer | pass
+| Start Quiz Button | Click button | Hides ready up menu and shows quiz questions page | pass
