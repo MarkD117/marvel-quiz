@@ -439,3 +439,17 @@ The fix for this bug was to add a media query at 1030px to restrict the width of
 #### Background no Longer overflowing
 
 ![Screenshot](documentation/background-overflow-bug-fixed.png)
+
+### Next Button Not Hiding
+
+When clicking the next button after answering a question, the button should disappear. The button was hidden for the first question but stayed after answering the first question. The fix for this was quite simple. In the nextQuestion function, I added a line of code that would re-hide the next question button when clicked.
+
+Below you can see the next question button has the hidden class added when clicked.
+
+#### Initial Code
+
+![Screenshot](documentation/next-button-bug.png)
+
+#### Fixed Code
+
+![Screenshot](documentation/next-button-bug-fix.png)
