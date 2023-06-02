@@ -320,3 +320,18 @@ The site has been tested on the following browsers:
 - Microsoft Edge
 - iOS (Mobile)
 - Android
+
+### Testing and Results
+
+#### **Quiz Home Page**
+
+| Item | Test | Expected Outcome | Result | 
+|--|--|--|--|
+| Site Elements | Page Load | All elements and styles load and are shown | pass
+| Quiz Button | Click button | Hides home menu and shows difficulty selector | pass
+| Rules Button | Click button | Hides home menu and shows quiz rules | pass
+| Main Home Button | Click home button | Refreshes page and brings user back to main home page | pass
+| Main Home Button | Hover on button | Shows button hover effect | pass
+| Main Home Button | Hover on button | Cursor changes to pointer | pass
+| Quiz Home Page Buttons | Hover on button | Shows button hover effect | pass
+| Quiz Home Page Buttons | Hover on button | Cursor changes to pointer | pass
