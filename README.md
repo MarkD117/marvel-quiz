@@ -7,6 +7,16 @@ The live project can be accessed [here](https://markd117.github.io/marvel-quiz/)
 
 ![Screenshot](documentation/responsive-image.png)
 
+## Index – Table of Contents
+* [UI/UX](#UI/UX)
+* [Wireframes](#wireframes)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
+
 ## UI/UX
 
 ### Design Overview
