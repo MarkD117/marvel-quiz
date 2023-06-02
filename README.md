@@ -150,7 +150,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 | Type | Image |
 | --- | --- |
 | Desktop | ![screenshot](documentation/wireframes/quiz-results-menu-desktop.png) |
-| Mobile | ![screenshot](documentation/wireframes/quiz-ready-up-menu-mobile.png) |
+| Mobile | ![screenshot](documentation/wireframes/quiz-results-menu-mobile.png) |
 
 </details>
 
