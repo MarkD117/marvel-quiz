@@ -75,7 +75,7 @@ Icons sourced from [Font Awesome](https://fontawesome.com/).
 - Ad a new site user, I'd like the game to test my knowledge and give me feedback on my progress.
 
 
-## Wirefames
+## Wireframes
 
 During the planning stages, I  created wireframes for all pages of the site. [Balsamiq](https://balsamiq.com/wireframes) to design the digital wireframes. All wireframes can be seen below.
 
