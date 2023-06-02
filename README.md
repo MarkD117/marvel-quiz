@@ -31,6 +31,8 @@ Marvel traditionally tend to use very bright and bold colours. As the background
 
 Generally, white text is for headings and black text is for buttons. This increases the readability for the user. The deep red colour is applied to main button text using hover effects. This black, red and white colour Scheme is used throughout the quiz and contrasts well with the blue of the main quiz background. There are two separate colour schemes used for the correct and incorrect styles set for the answer buttons after the user selects and option. The HEX codes and colour palettes can be seen below!
 
+[coolors.co](https://coolors.co/103a55-ffffff-934106-f6ebe0-255c7e-fd9c35) was used to generate the image of the colour palettes below.
+
 #### Main Colour Palette
 
 - `#000000` used for button text.
