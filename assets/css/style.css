@@ -12,7 +12,7 @@
 /* Main game background image */
 
 html {
-  background: url("../images/main-quiz-background-img.jpg") no-repeat center center;
+  background: url("../images/main-quiz-background-img\ -\ Copy.AVIF") no-repeat center center;
   background-size: cover;
 }
 
@@ -54,7 +54,7 @@ main {
 /* Main quiz container style */
 
 #quiz-container {
-  background: url("../images/quiz-background-image-2.jpg") no-repeat center center;
+  background: url("../images/quiz-background-image-2\ -\ Copy.AVIF") no-repeat center center;
   max-width: 80%;
   width: 100%;
   justify-self: center;
