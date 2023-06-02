@@ -289,3 +289,13 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 - questions.js Validation
 
     ![questions.js-validation screenshot](documentation/jshint-questions.js-img.png)
+
+### Browser Compatibility
+
+The site has been tested on the following browsers:
+
+- Google Chrome
+- Mozilla FireFox
+- Microsoft Edge
+- iOS (Mobile)
+- Android
