@@ -290,11 +290,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - script.js Validation
 
-    ![script.js-validation screenshot](documentation/jshint-script.js-img1.png)
-
-    ![script.js-validation screenshot](documentation/jshint-script.js-img2.png)
-
-    ![script.js-validation screenshot](documentation/jshint-script.js-img3.png)
+    ![script.js-validation screenshot](documentation/jshint-script.js-img.png)
 
 - questions.js Validation
 
