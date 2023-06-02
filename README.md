@@ -74,6 +74,7 @@ Icons sourced from [Font Awesome](https://fontawesome.com/).
 4. As a new site user, I'd like the site to be interesting to look at and fun to play.
 5. As a new site user, I'd like the game to test my knowledge and give me feedback on my progress.
 
+    [Validating User Stories](#validating-user-stories)
 
 ## Wireframes
 
@@ -328,6 +329,18 @@ The site has been tested on the following browsers:
 - Android
 
 ### Testing and Results
+
+### Validating User Stories
+
+[User Stories](#user-stories)
+
+| Story No. | Feature Developed | Criteria Met 
+|--|--|--|
+| 1 | The home page clearly outlines the sites purpose in the headings so the user can instantly decide whether they would like to use it or not. | Pass | 
+| 2 | Rules section developed to explain to the user exactly how to play the game. | Pass | 
+| 3 | All buttons are clearly labelled and have descriptive names. Navigation is built to be intuitive and easy to understand. | Pass | 
+| 4 | Site style is designed to be interesting to look at with detailed backgrounds and hover effects. Main game provides the player with an entertaining experience as it rewards them with customised messages and provides a score.  | Pass | 
+| 5 | Quiz was built with varying levels of difficulty which will test the players knowledge indefinitely. Feedback is presented in the form of the player score and custom messages. | Pass | 
 
 #### **Quiz Home Page**
 
