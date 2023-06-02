@@ -483,7 +483,7 @@ Below you can see the next question button has the hidden class added when click
 
 ![Screenshot](documentation/logical-operator-warning.png)
 
-The first warning is to do with the use of a bitwise logical operator. It is unclear why JSHint displayes this an error, but its speculated that it is because "|" is a bitwise logical operator that isn't actually manipulating bits. More information on this can be found on Stack Overflow [here](https://stackoverflow.com/questions/11605068/why-does-jshint-argue-against-bitwise-operators-how-should-i-express-this-code).
+The first warning is to do with the use of a bitwise logical operator. It is unclear why JSHint displays this as an error, but, its speculated that it is because "|" is a bitwise logical operator that isn't actually manipulating bits. More information on this can be found on Stack Overflow [here](https://stackoverflow.com/questions/11605068/why-does-jshint-argue-against-bitwise-operators-how-should-i-express-this-code).
 
 #### **Undefined Variables**
 
