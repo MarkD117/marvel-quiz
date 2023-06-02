@@ -180,7 +180,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - This menu is used to set the specific question pool depending on the users selected difficulty. The user is presented with three buttons of varying difficulty. When a button is clicked, a function is run that will set the questions shown to an predetermined array of easy, medium or hard questions.
 
-- The player can replay the quiz and choose a new difficulty each time which will provide them with different questions for all three options.
+- The player can replay the quiz or choose a new difficulty each time which will provide them with different questions for all three options.
 
     ![Screenshot](documentation/quiz-difficulty-selection.png)
 
