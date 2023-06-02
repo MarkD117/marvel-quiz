@@ -475,3 +475,31 @@ The second warning that appears in JSHint are three undefined variables. This wa
 ![Screenshot](documentation/unused-variables-warning.png)
 
 The final warning that appears pertains to three unused variables in the questions.js file. Similar to the undefined variables in the previous warning, this is caused by having separate JavaScript files. These variables are used in the script.js file and are defined in the questions.js file. 
+
+## Deployment
+
+### GitHub Pages Deployment
+
+The site was deployed to GitHub Pages. The steps to deploy are as follows:
+- In the [GitHub repository](https://github.com/MarkD117/marvel-quiz), navigate to the Settings tab 
+- From the source section drop-down menu, select the **Main** Branch, then click "Save".
+- The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here](https://markd117.github.io/marvel-quiz/)
+
+### Fork Repository on GitHub
+
+A copy of the GitHub Repository can be made by forking the GitHub account. Changes can be made on this copy without affecting the original repository.
+
+- Log in to GitHub and locate [GitHub repository](https://github.com/MarkD117/marvel-quiz).
+- Locate the Fork button which can be found in the top corner, right-hand side of the page, inline with the repository name.
+- Click this button to create a copy of the original repository in your own GitHub Account.
+
+### Clone Repository on GitHub
+
+- Click on the code button which is underneath the main tab and repository name to the right.
+- In the 'Clone with HTTPS' section, click on the clipboard icon to copy the URL.
+- Open Git Bash in your IDE of choice.
+- Change the current working directory to where you want the cloned directory to be made.
+- Type git clone, and then paste the URL copied from GitHub.
+- Press enter and the clone of your repository will be created.
