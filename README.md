@@ -534,8 +534,8 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 | [Google Fonts](https://fonts.google.com/) | Font | Source for font used on the site |
 | [Font Awesome](https://fontawesome.com/) | Icons | Source for all icons used on the site |
 | [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/73e9c0413ead4a21b389e33c77706102/4fe6474cab114387ad0e72bf7ec1c201/) | Data Structures | Iterating nested data structures |
-| [Wallpaper Safari](https://wallpapersafari.com/red-background-images/) | Quiz Background Image | Background for quiz content |
-| [Wallpapers.com](https://wallpapers.com/4k-marvel) | Main Site Background Image | Background for quiz content |
+| [Wallpaper Safari](https://wallpapersafari.com/red-background-images/) | Background Image | Background for quiz content |
+| [Wallpapers.com](https://wallpapers.com/4k-marvel) | Background Image | Main site backgroud image |
 | [Marvel](https://www.marvel.com/) | favicon | Source for site favicon |
 | [Coding Nepal Web](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/) | JavaScript | Tick & Cross icons for answer buttons |
 | [StackOverflow](https://stackoverflow.com/questions/22754315/for-loop-for-htmlcollection-elements) | For in loop | Iterating HTML Collection |
@@ -547,7 +547,7 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 | [W3Schools](https://www.w3docs.com/snippets/css/how-to-center-the-content-in-grid.html) | Cursor pointer | How to use cursor pointer property |
 | [Sitepoint](https://www.sitepoint.com/simple-javascript-quiz/) | Quiz | Question structure inspiration |
 | [Readers Digest](https://www.rd.com/article/marvel-trivia/) | Questions | Main source for all quiz questions |
-| [Readme.so](https://readme.so/) | Markdown | Tool used for visualising creating and visualising readme content |
+| [Readme.so](https://readme.so/) | Markdown | Tool used for creating and visualising readme content |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder/) | Markdown | Assistance in creating markdown content |
 
 ## Acknowledgements 
