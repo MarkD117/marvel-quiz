@@ -422,4 +422,4 @@ I gave the header `display: grid` and wrapped the main heading in its own div. I
 
 #### Fixed Code
 
-![Screenshot](documentation/heading-stretch-bugged-code.png)
+![Screenshot](documentation/heading-stretch-fixed-code.png)
