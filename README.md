@@ -203,7 +203,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - The next button is hidden until the player selects an answer. Clicking the button will display the next question and reset the state of the answer buttons allowing the player to select another answer.
 
-- Below we can see what the quiz questions page looks like after the player selects an icorrect answer.
+- Below we can see what the quiz questions page looks like after the player selects an incorrect answer.
 
     ![Screenshot](documentation/answered-question.png)
 
