@@ -518,7 +518,6 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 
 | Source | Item | Notes |
 | --- | --- | --- |
-
 | [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t) | JavaScript | Randomising quiz question order |
 | [Slaying The Dragon](https://www.youtube.com/watch?v=EiNiSFIPIQE&t) | CSS | Understanding CSS Grid |
 | [Google Fonts](https://fonts.google.com/) | Font | Source for font used on the site |
