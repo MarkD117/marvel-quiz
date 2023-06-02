@@ -403,3 +403,23 @@ The first issue that I ran into was when I was trying to position the button ele
 The fix for this was to give the menu container a display of grid and wrap the buttons in their own div. I then used `display: flex;` on the button container to center the buttons within the grid. This would prevent the buttons from ignoring each other and stacking.
 
 ![Screenshot](documentation/button-stack-bug.png)
+
+### Main Heading Stretching
+
+Another bug I ran into was with the main heading. The background of the main heading was stretching with different screen sizes. In some cases this would cause extremely large gaps in to each side of the heading text making it appear very out of place.
+
+I initially set the heading as `position: absolute;` to prevent this stretching bug but it caused the main quiz container to clip under the heading. The fix for this bug was similar to the button stacking issue.
+
+I gave the header `display: grid` and wrapped the main heading in its own div. I then used flexbox to center the heading within the grid. This allowed me to change the background width, without affecting the position of the heading.
+
+#### Bug
+
+![Screenshot](documentation/heading-stretch-bug.png)
+
+#### Old Code
+
+![Screenshot](documentation/heading-stretch-bugged-code.png)
+
+#### Fixed Code
+
+![Screenshot](documentation/heading-stretch-bugged-code.png)
