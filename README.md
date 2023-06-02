@@ -470,7 +470,7 @@ The first warning is to do with the use of a bitwise logical operator. It is unc
  
 The second warning that appears in JSHint are three undefined variables. This warning appears due to the fact that there is a separate JavaScript file that contains the questions. These variables are not definded in script.js; however, they are defined in questions.js.
 
-### **Unused Variables**
+#### **Unused Variables**
 
 ![Screenshot](documentation/unused-variables-warning.png)
 
