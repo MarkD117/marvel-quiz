@@ -342,3 +342,12 @@ The site has been tested on the following browsers:
 |--|--|--|--|
 | Rules | Click rules button | All rules are displayed and can be seen clearly | pass
 | Rules | Click rules button | Rules container size changes for mobile | pass
+
+#### **Quiz Difficulty Selection**
+
+| Item | Test | Expected Outcome | Result | 
+|--|--|--|--|
+| Difficulty Buttons | Hover on button | Button hover styles are shown | pass
+| Difficulty Buttons | Hover on button | Cursor changes to pointer | pass
+| Difficulty Buttons | Click button | Sets the question pool to the chosen difficulty | pass
+| Difficulty Buttons | Click button | Hides the difficulty selection menu and shows the ready up menu | pass
