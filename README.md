@@ -228,3 +228,21 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 - Clicking the main menu button will reset the quiz, hide the results screen and bring the user back to the main home menu.
 
     ![Screenshot](documentation/quiz-results-5-correct.png)
+
+## Future Features
+
+### Storing The User Score
+
+- A future feature I would be keen to add is a way for the player to store their score for each individual quiz. I would like to have a feature where they can enter their name and save their score to another menu accessed on the main home page. This could possibly be done through the use of session cookies.
+
+### Timer Based Questions
+
+- Another feature that I would like to add in the future is to have a timer displayed on the quiz questions area. The timer will count down from a set time which will be different for each difficulty. If the timer reaches 0 before the player selects an answer, the question will auto-complete and the correct answer will be highlighted; however, the players score will not increase as they have not answered the question.
+
+### Impossible Difficulty
+
+- An interesting feature I would like to add is another difficulty level called 'Impossible'. This difficulty would contain questions that would puzzle even the most die-hard Marvel fans. Combined with a short timer, this quiz difficulty would truly be a challenge!
+
+### Increase Quiz Questions
+
+- In future, I also want to increase the number of questions shown to the player. Increasing the number of questions would allow the user to have a more detailed experience when playing the quiz.
