@@ -290,6 +290,27 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
     ![questions.js-validation screenshot](documentation/jshint-questions.js-img.png)
 
+### Lighthouse Testing
+
+[Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the site performance, accessibility, best practices and SEO (Search Engine Optimisation).
+
+The site scored an almost perfect score with only the performance section getting a score of 90/100.
+
+![lighthouse screenshot](documentation/lighthouse-testing.png)
+
+### Colour Accessibility
+
+[A11Y](https://color.a11y.com/Contrast/) was used to test the accessibility of background/text colour contrasts. As we can see in the image below, there are no contrast issues present.
+
+![A11Y screenshot](documentation/a11y-contrast-accessibility-validator.png)
+
+
+[Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) was also used to test the initial color contrasts. As we can see below, the off-white text fails the contrast ratio on smaller text. That said, there is no text that size in the Marvel Quiz project.
+
+![Adobe Color screenshot](documentation/adobe-color-contrast-check-img1.png)
+
+![Adobe Color screenshot](documentation/adobe-color-contrast-check-img2.png)
+
 ### Browser Compatibility
 
 The site has been tested on the following browsers:
