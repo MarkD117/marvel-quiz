@@ -393,3 +393,13 @@ The site has been tested on the following browsers:
 | Results Menu Buttons | Hover on button | Cursor changes to pointer | pass
 | Replay Quiz Button | Click button | Restarts the quiz at the chosen difficulty | pass
 | Main Menu Button | Click Button | Resets the quiz and brings the user back to the main home page | pass
+
+## Bug Fixes
+
+### Button Stacking Issue
+
+The first issue that I ran into was when I was trying to position the button elements within the main quiz container. Initially, to do this I used postition absolute alongside the top, left and transform properties to position all buttons in the center. This caused all button elements to ingore each other and stack on top of each other rendering most of them useless.
+
+The fix for this was to give the menu container a display of grid and wrap the buttons in their own div. I then used `display: flex;` on the button container to center the buttons within the grid. This would prevent the buttons from ignoring each other and stacking.
+
+![Screenshot](documentation/button-stack-bug.png)
