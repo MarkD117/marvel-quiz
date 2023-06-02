@@ -80,7 +80,7 @@ Icons sourced from [Font Awesome](https://fontawesome.com/).
 
 ## Wireframes
 
-During the planning stages, I  created wireframes for all pages of the site. [Balsamiq](https://balsamiq.com/wireframes) to design the digital wireframes. All wireframes can be seen below.
+During the planning stages, I  created wireframes for all pages of the site. [Balsamiq](https://balsamiq.com/wireframes) was used to design the digital wireframes. All wireframes can be seen below.
 
 ### Quiz Home Page Wireframes
 
