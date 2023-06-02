@@ -359,3 +359,26 @@ The site has been tested on the following browsers:
 | Start Quiz Button | Hover on button | Button hover styles are shown | pass
 | Start Quiz Button | Hover on button | Cursor changes to pointer | pass
 | Start Quiz Button | Click button | Hides ready up menu and shows quiz questions page | pass
+
+#### **Quiz Questions Page**
+
+| Item | Test | Expected Outcome | Result | 
+|--|--|--|--|
+| Quiz Question | Start Quiz | Correct difficulty question is displayed | pass
+| Answer Buttons | Start Quiz | Correct answer buttons are shown | pass
+| Answer Buttons | Start Quiz | Answer button order is randomised | pass
+| Answer Buttons | Hover on button | Button hover styles are shown | pass
+| Answer Buttons | Hover on button | Cursor changes to pointer | pass
+| Answer Buttons | Click button | Quiz correctly calculates correct answer | pass
+| Answer Buttons | Click button | Correct style is applied to button when clicked | pass
+| Answer Buttons | Click button | Correct button will be highlighted when player answers incorrectly | pass
+| Answer Buttons | Click button | Buttons are disabled after answering | pass
+| Answer Buttons | Click button | Cursor changes back to default after answering | pass
+| Next Button | Click answer button | Button shown after answering | pass
+| Next Button | Hover on button | Button hover styles are shown | pass
+| Next Button | Hover on button | Cursor changes to pointer | pass
+| Next Button | Click button | Shows next question | pass
+| Next Button | Click button | Resets state of answer buttons | pass
+| Next Button | Click button | Button becomes hidden after click | pass
+| Question Counter | Click next button | Counter increases with questions | pass
+| Next Button | Click button | After final question, hides quiz questions and shows quiz results menu | pass
