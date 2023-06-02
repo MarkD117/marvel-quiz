@@ -512,7 +512,7 @@ The live link can be found [here](https://markd117.github.io/marvel-quiz/)
 
 A copy of the GitHub Repository can be made by forking the GitHub account. Changes can be made on this copy without affecting the original repository.
 
-- Log in to GitHub and locate [GitHub repository](https://github.com/MarkD117/marvel-quiz).
+- Log into GitHub and locate the [GitHub repository](https://github.com/MarkD117/marvel-quiz).
 - Locate the Fork button which can be found in the top corner, right-hand side of the page, inline with the repository name.
 - Click this button to create a copy of the original repository in your own GitHub Account.
 
@@ -520,7 +520,7 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 
 - Click on the code button which is underneath the main tab and repository name to the right.
 - In the 'Clone with HTTPS' section, click on the clipboard icon to copy the URL.
-- Open Git Bash in your IDE of choice.
+- Open Git Bash in your chosen IDE.
 - Change the current working directory to where you want the cloned directory to be made.
 - Type git clone, and then paste the URL copied from GitHub.
 - Press enter and the clone of your repository will be created.
@@ -546,6 +546,7 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 | [W3Docs](https://www.w3docs.com/snippets/css/how-to-center-the-content-in-grid.html) | CSS Grid | Centring content in a grid |
 | [W3Schools](https://www.w3docs.com/snippets/css/how-to-center-the-content-in-grid.html) | Cursor pointer | How to use cursor pointer property |
 | [Sitepoint](https://www.sitepoint.com/simple-javascript-quiz/) | Quiz | Question structure inspiration |
+| [Readers Digest](https://www.rd.com/article/marvel-trivia/) | Questions | Main source for all quiz questions |
 | [Readme.so](https://readme.so/) | Markdown | Tool used for visualising creating and visualising readme content |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder/) | Markdown | Assistance in creating markdown content |
 
