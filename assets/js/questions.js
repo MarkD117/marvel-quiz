@@ -305,4 +305,64 @@ const hardQuestions = [
 
         answer: 'Eight'
     },
+
+    {
+        question: 'How many years was Steve Rogers trapped under the ice?',
+        options: [
+            { text: '66 Years'},
+            { text: '50 Years'},
+            { text: '78 years'},
+            { text: '35 Years'}
+        ],
+
+        answer: '66 Years'
+    },
+
+    {
+        question: 'What is the name of the call sign Carol Danvers and Maria use in Captain Marvel?',
+        options: [
+            { text: 'Nova'},
+            { text: 'Photon'},
+            { text: 'Rogue'},
+            { text: 'Atlas'}
+        ],
+
+        answer: 'Photon'
+    },
+
+    {
+        question: "What percentage success rate was Tony's time travel test in Avengers: Endgame?",
+        options: [
+            { text: '98.837%'},
+            { text: '100%'},
+            { text: '96.244%'},
+            { text: '99.987%'}
+        ],
+
+        answer: '99.987%'
+    },
+
+    {
+        question: "In Avengers: Infinity War, what is Drax eating when he's watching Peter and Gamora kiss?",
+        options: [
+            { text: 'Puffies'},
+            { text: 'Zarg Nuts'},
+            { text: 'Yaro Root'},
+            { text: 'Sugar Snaps'}
+        ],
+
+        answer: 'Zarg Nuts'
+    },
+
+    {
+        question: "What university's name is on the sweatshirt worn by Dr. Strange when Peter visits him at his Sanctum Santorum in Spider-Man: No Way Home?",
+        options: [
+            { text: 'California'},
+            { text: 'Louisiana'},
+            { text: 'Columbia'},
+            { text: 'Massachusetts'}
+        ],
+
+        answer: 'Columbia'
+    }
 ];
