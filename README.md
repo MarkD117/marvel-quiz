@@ -382,3 +382,14 @@ The site has been tested on the following browsers:
 | Next Button | Click button | Button becomes hidden after click | pass
 | Question Counter | Click next button | Counter increases with questions | pass
 | Next Button | Click button | After final question, hides quiz questions and shows quiz results menu | pass
+
+#### **Quiz Results Menu**
+
+| Item | Test | Expected Outcome | Result | 
+|--|--|--|--|
+| Player Score | Complete Quiz | Quiz calculates and displays correct score | pass
+| Quiz Result Feedback | Complete Quiz | Correct message displayed depending on player score | pass
+| Results Menu Buttons | Hover on button | Button hover styles are shown | pass
+| Results Menu Buttons | Hover on button | Cursor changes to pointer | pass
+| Replay Quiz Button | Click button | Restarts the quiz at the chosen difficulty | pass
+| Main Menu Button | Click Button | Resets the quiz and brings the user back to the main home page | pass
