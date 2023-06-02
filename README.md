@@ -194,7 +194,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 ### Quiz Questions Page
 
-- Upon starting the quiz, the ready up menu will disappear and Quiz Questions Page will be shown. the player will be presented with a question at the top of top of the main quiz container. Underneath the question are four selectable buttons.
+- Upon starting the quiz, the ready up menu will disappear and Quiz Questions Page will be shown. The player will be presented with a question at the top of top of the main quiz container. Underneath the question are four selectable buttons.
 
     ![Screenshot](documentation/quiz-question-menu.png)
 
@@ -210,13 +210,13 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - Depending on whether the answer button is correct or incorrect, a tick or cross icon will appear under the text of the button.
 
-- After the player has selected an answer, all buttons become disabled and can no longer be clicked. The `cursor: pointer;` property is also removed further showing the user that the buttons are not clickable. 
+- After the player has selected an answer, all buttons become disabled and can no longer be clicked. The `cursor: pointer;` property is also removed, further showing the user that the buttons are not clickable. 
 
 - Any buttons that are not highlighted as correct/incorrect will be greyed out further distinguishing the other relevant answers.
 
 - The next button is hidden until the player selects an answer. Clicking the button will display the next question and reset the state of the answer buttons allowing the player to select another answer.
 
-- Below we can see what the quiz questions page looks like after the player selects an incorrect answer.
+- Below, we can see what the quiz questions page looks like after the player selects an incorrect answer.
 
     ![Screenshot](documentation/answered-question.png)
 
@@ -226,15 +226,15 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 
 - Each time a new question is displayed, the question counter is increased by 1. If the quiz is replayed or a new difficulty is selected. The counter is reset to its default value of 1.
 
-- Below you can see that the number of the question has increased as we have moved on to the next question in the set.
+- Below, you can see that the number of the question has increased as we have moved on to the next question in the set.
 
     ![Screenshot](documentation/question-counter.png)
 
 ### Quiz Results Menu
 
-- After completing the quiz, the quiz questions screen will disappear and the Quiz Results Menu will be shown to the user. There is a few interesting features in this menu. First of which, is a score tracker. When the user selects a correct answer, their score will be increased by 1. After they have answered the final question, they will be presented with their score value, depending on how many questions they answered correctly.
+- After completing the quiz, the quiz questions screen will disappear and the Quiz Results Menu will be shown to the user. There are a few interesting features in this menu. First of which, is a score tracker. When the user selects a correct answer, their score will be increased by 1. After they have answered the final question, they will be presented with their score value, depending on how many questions they answered correctly.
 
-- As well as tracking the player score, personalised messages will be displayed, depending on how many questions the player answered correctly. Below we can see the message displayed after answering all five questions correctly.
+- As well as tracking the player score, personalised messages will be displayed, depending on how many questions the player answered correctly. Below, we can see the message displayed after answering all five questions correctly.
 
 - There are two buttons on the results menu. These are the Replay Quiz and Main Menu buttons. If the player clicks the replay quiz button, it will allow them to re-take the same difficulty quiz again without having to return to the main home menu. If you don't get a perfect score the first time, this button will let you take the quiz again.
 
