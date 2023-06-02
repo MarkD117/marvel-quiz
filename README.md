@@ -68,11 +68,11 @@ Icons sourced from [Font Awesome](https://fontawesome.com/).
 
 ## User Stories
 
-- As a new site user, I'd like to understand the site's goal so that I can determine whether I would like to use it or not.
-- As a new site user, I'd like to understand how to play the game.
-- As a new site user, I'd like the navigation to be simple and easy to understand.
-- As a new site user, I'd like the site to be interesting to look at and fun to play.
-- Ad a new site user, I'd like the game to test my knowledge and give me feedback on my progress.
+1. As a new site user, I'd like to understand the site's goal so that I can determine whether I would like to use it or not.
+2. As a new site user, I'd like to understand how to play the game.
+3. As a new site user, I'd like the navigation to be simple and easy to understand.
+4. As a new site user, I'd like the site to be interesting to look at and fun to play.
+5. As a new site user, I'd like the game to test my knowledge and give me feedback on my progress.
 
 
 ## Wireframes
