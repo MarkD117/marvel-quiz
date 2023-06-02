@@ -59,6 +59,66 @@ const easyQuestions = [
 
         answer: 'Howard'
     },
+
+    {
+        question: 'What video game does Thor get addicted to in Avengers: Endgame?',
+        options: [
+            { text: 'Street Fighter'},
+            { text: 'Need For Speed'},
+            { text: 'Super Mario'},
+            { text: 'Fortnite'}
+        ],
+
+        answer: 'Fortnite'
+    },
+
+    {
+        question: 'Who did Captain America give his shield to in Avengers: Endgame?',
+        options: [
+            { text: 'Falcon'},
+            { text: 'Iron Man'},
+            { text: 'Black Widow'},
+            { text: 'The Winter Soldier'}
+        ],
+
+        answer: 'Falcon'
+    },
+
+    {
+        question: 'What is the name of the agency led by Red Skull?',
+        options: [
+            { text: 'Sinister Six'},
+            { text: 'Hydra'},
+            { text: 'A.I.M'},
+            { text: 'Hellfire Club'}
+        ],
+
+        answer: 'Hydra'
+    },
+
+    {
+        question: 'Where does Hank Pym keep an army tank in Ant-Man?',
+        options: [
+            { text: 'His keychain'},
+            { text: 'His Garage'},
+            { text: 'His Office'},
+            { text: 'His Warehouse'}
+        ],
+
+        answer: 'His keychain'
+    },
+
+    {
+        question: "What is Agent Coulson's first name?",
+        options: [
+            { text: 'Bill'},
+            { text: 'Jason'},
+            { text: 'Phil'},
+            { text: 'Steven'}
+        ],
+
+        answer: 'Phil'
+    }
 ];
 
 // Medium Questions nested data structure
@@ -76,7 +136,7 @@ const mediumQuestions = [
     },
 
     {
-        question: "Who is Black Panther's little sister",
+        question: "Who is Black Panther's little sister?",
         options: [
             { text: 'Shuri'},
             { text: 'Okoye'},
