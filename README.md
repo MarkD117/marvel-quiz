@@ -252,6 +252,7 @@ During the planning stages, I  created wireframes for all pages of the site. [Ba
 - HTML used to create main site content.
 - CSS used designing and styling the layout of the site.
 - JavaScript used to implement features and functionality to the game.
+- Chrome DevTools - Used to debug and test responsiveness of the site
 - Git used for version control
 - GitHub used to store game source code.
 - GitHub Pages used to deploy the main game
