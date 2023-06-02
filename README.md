@@ -396,7 +396,7 @@ The site has been tested on the following browsers:
 
 ## Bug Fixes
 
-### Button Stacking Issue
+### Button Stacking Bug
 
 The first issue that I ran into was when I was trying to position the button elements within the main quiz container. Initially, to do this I used postition absolute alongside the top, left and transform properties to position all buttons in the center. This caused all button elements to ingore each other and stack on top of each other rendering most of them useless.
 
@@ -404,7 +404,7 @@ The fix for this was to give the menu container a display of grid and wrap the b
 
 ![Screenshot](documentation/button-stack-bug.png)
 
-### Main Heading Stretching
+### Main Heading Stretching Bug
 
 Another bug I ran into was with the main heading. The background of the main heading was stretching with different screen sizes. In some cases this would cause extremely large gaps in to each side of the heading text making it appear very out of place.
 
@@ -423,3 +423,19 @@ I gave the header `display: grid` and wrapped the main heading in its own div. I
 #### Fixed Code
 
 ![Screenshot](documentation/heading-stretch-fixed-code.png)
+
+### Background Overflow Bug
+
+After adding the rules section I was testing to see what it looked like on different screen sizes. I found that above 1030px the quiz background no longer can contain the quiz rules content. This caused it to overflow outside of the background.
+
+The fix for this bug was to add a media query at 1030px to restrict the width of the rules page to a maximum of 800px. This would prevent the content from overflowing and it would sit neatly in its container.
+
+![Screenshot](documentation/background-overflow-bug.png)
+
+#### Code For Fix
+
+![Screenshot](documentation/background-overflow-code-fix.png)
+
+#### Background no Longer overflowing
+
+![Screenshot](documentation/background-overflow-bug-fixed.png)
