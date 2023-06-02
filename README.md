@@ -419,7 +419,7 @@ The site has been tested on the following browsers:
 
 ### Button Stacking
 
-The first issue that I ran into was when I was trying to position the button elements within the main quiz container. Initially, to do this I used postition absolute alongside the top, left and transform properties to position all buttons in the center. This caused all button elements to ingore each other and stack on top of each other rendering most of them useless.
+The first issue that I ran into was when I was trying to position the button elements within the main quiz container. Initially, to do this I used postition absolute alongside the top, left and transform properties to position all buttons in the center. This caused all button elements to ignore each other and stack on top of each other rendering most of them useless.
 
 The fix for this was to give the menu container a display of grid and wrap the buttons in their own div. I then used `display: flex;` on the button container to center the buttons within the grid. This would prevent the buttons from ignoring each other and stacking.
 
@@ -427,7 +427,7 @@ The fix for this was to give the menu container a display of grid and wrap the b
 
 ### Main Heading Stretching
 
-Another bug I ran into was with the main heading. The background of the main heading was stretching with different screen sizes. In some cases this would cause extremely large gaps in to each side of the heading text making it appear very out of place.
+Another bug I ran into was with the main heading. The background of the main heading was stretching with different screen sizes. In some cases this would cause extremely large gaps to each side of the heading text making it appear very out of place.
 
 I initially set the heading as `position: absolute;` to prevent this stretching bug but it caused the main quiz container to clip under the heading. The fix for this bug was similar to the button stacking issue.
 
@@ -463,7 +463,7 @@ The fix for this bug was to add a media query at 1030px to restrict the width of
 
 ### Next Button Not Hiding
 
-When clicking the next button after answering a question, the button should disappear. The button was hidden for the first question but stayed after answering the first question. The fix for this was quite simple. In the nextQuestion function, I added a line of code that would re-hide the next question button when clicked.
+When clicking the next button after answering a question, the button should disappear. The button was hidden for the first question but stayed after answering that question. The fix for this was quite simple. In the nextQuestion function, I added a line of code that would re-hide the next question button when clicked.
 
 Below you can see the next question button has the hidden class added when clicked.
 
