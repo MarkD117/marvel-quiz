@@ -453,3 +453,25 @@ Below you can see the next question button has the hidden class added when click
 #### Fixed Code
 
 ![Screenshot](documentation/next-button-bug-fix.png)
+
+## Known Bugs
+
+### JSHint Warnings
+
+#### **Unexpected Use Of "|"**
+
+![Screenshot](documentation/logical-operator-warning.png)
+
+The first warning is to do with the use of a bitwise logical operator. It is unclear why JSHint displayes this an error, but its speculated that it is because "|" is a bitwise logical operator that isn't actually manipulating bits. More information on this can be found on Stack Overflow [here](https://stackoverflow.com/questions/11605068/why-does-jshint-argue-against-bitwise-operators-how-should-i-express-this-code).
+
+#### **Undefined Variables**
+
+![Screenshot](documentation/undefined-variables-warning.png)
+ 
+The second warning that appears in JSHint are three undefined variables. This warning appears due to the fact that there is a separate JavaScript file that contains the questions. These variables are not definded in script.js; however, they are defined in questions.js.
+
+### **Unused Variables**
+
+![Screenshot](documentation/unused-variables-warning.png)
+
+The final warning that appears pertains to three unused variables in the questions.js file. Similar to the undefined variables in the previous warning, this is caused by having separate JavaScript files. These variables are used in the script.js file and are defined in the questions.js file. 
